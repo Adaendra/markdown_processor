@@ -1,8 +1,8 @@
 # Unit Testing
 
-To write unit tests, we are using **mocha**.
-
-[Mocha Website](https://mochajs.org/)
+To write unit tests, we are using :
+- [**Mocha**](https://mochajs.org/)
+- [**Chai**](https://www.chaijs.com/) - *Assertion library*
 
 ## Structure
 To make the unit tests working with mocha, all the unit tests must be in the "**test**" folder.
