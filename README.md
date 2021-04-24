@@ -2,9 +2,9 @@
 
 ## TODO Feature
 - [x] Title
-- [ ] List
-- [ ] SubList
-- [ ] Ordered list
+- [x] List
+- [x] SubList
+- [x] Ordered list
 - [ ] Horizontal rule
 - [ ] Italic
 - [ ] Bold
@@ -47,5 +47,4 @@
     - [ ] Info
     - [ ] Warning
     - [ ] Error 
-
 

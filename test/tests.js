@@ -67,3 +67,27 @@ d
 `));
     })
 })
+
+describe("Ordered list processor", () => {
+    it('Multilines - Sub List', () => {
+        console.log(markdownProcessor.process(`
+# titre
+1. test
+ 1. a
+ aa
+  1. b
+    1. c
+   1. d
+        1. z
+    1. e  
+      1. f
+1. test 2
+1. test 3
+d
+
+d
+        1. test 4
+1. test 5
+`));
+    })
+})
