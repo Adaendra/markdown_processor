@@ -47,7 +47,7 @@ describe("List processor", () => {
 </li><li>test 3
 </li></ul>`);
     })
-    it('Multilines - Sub List', () => {
+    it('Multilines - Sub List', () => { // TODO
         console.log(markdownProcessor.process(`
 # titre
 - test
@@ -68,7 +68,7 @@ d
     })
 })
 
-describe("Ordered list processor", () => {
+describe("Ordered list processor", () => { // TODO
     it('Multilines - Sub List', () => {
         console.log(markdownProcessor.process(`
 # titre
@@ -89,5 +89,18 @@ d
         1. test 4
 1. test 5
 `));
+    })
+})
+
+describe("Horizontal Rule processor", () => { // TODO
+    it('Simple line', () => {
+        console.log(markdownProcessor.process("---"));
+    })
+    it('Multiline', () => {
+        console.log(markdownProcessor.process(`a
+---
+b
+---
+c`));
     })
 })

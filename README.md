@@ -5,9 +5,9 @@
 - [x] List
 - [x] SubList
 - [x] Ordered list
-- [ ] Horizontal rule
-- [ ] Italic
+- [x] Horizontal rule
 - [ ] Bold
+- [ ] Italic
 - [ ] Strikethrough
 - [ ] Link
 - [ ] Image
@@ -30,8 +30,8 @@
 - [ ] SubList
 - [ ] Ordered list
 - [ ] Horizontal rule
-- [ ] Italic
 - [ ] Bold
+- [ ] Italic
 - [ ] Strikethrough
 - [ ] Link
 - [ ] Image
