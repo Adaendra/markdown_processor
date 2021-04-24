@@ -4,7 +4,7 @@ var expect  = require("chai").expect;
 
 describe("Test", () => {
     it("sub", () => {
-        markdownProcessor.process()
+        markdownProcessor.process("test")
 
         expect(1).to.equal(1);
     });
