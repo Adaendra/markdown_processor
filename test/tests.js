@@ -25,3 +25,9 @@ describe("Title processors", () => {
         expect(markdownProcessor.process('Hello world!')).to.equal('Hello world!');
     });
 });
+
+describe("List processor", () => {
+    it('test', () => {
+        expect(markdownProcessor.process(`- test`)).to.equal(`<ul><li>test</li></ul>`);
+    })
+})
