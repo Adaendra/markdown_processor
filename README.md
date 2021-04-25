@@ -6,7 +6,7 @@
 - [x] SubList
 - [x] Ordered list
 - [x] Horizontal rule
-- [ ] Bold
+- [x] Bold
 - [ ] Italic
 - [ ] Strikethrough
 - [ ] Link

@@ -8,6 +8,7 @@
     "h6",
     "list",
     "ordered_list",
-    "horizontal_rule"
+    "horizontal_rule",
+    "bold"
   ]
 }
