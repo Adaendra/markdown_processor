@@ -9,6 +9,7 @@
     "list",
     "ordered_list",
     "horizontal_rule",
-    "bold"
+    "bold",
+    "italic"
   ]
 }

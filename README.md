@@ -7,7 +7,7 @@
 - [x] Ordered list
 - [x] Horizontal rule
 - [x] Bold
-- [ ] Italic
+- [x] Italic
 - [ ] Strikethrough
 - [ ] Link
 - [ ] Image
