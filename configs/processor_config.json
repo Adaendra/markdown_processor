@@ -10,6 +10,7 @@
     "ordered_list",
     "horizontal_rule",
     "bold",
-    "italic"
+    "italic",
+    "strikethrough"
   ]
 }

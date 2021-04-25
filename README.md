@@ -8,7 +8,7 @@
 - [x] Horizontal rule
 - [x] Bold
 - [x] Italic
-- [ ] Strikethrough
+- [x] Strikethrough
 - [ ] Link
 - [ ] Image
     - [ ] Legend
