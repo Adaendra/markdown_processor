@@ -24,8 +24,17 @@ describe("Image processor", () => { // TODO
     it('Simple line - Correct - Options height', () => {
         expect(markdownProcessor.process('![aaa{"height":"120px"}](fff)')).to.equal('<img src="fff" alt="aaa" height="120px">');
     })
+    it('Simple line - Correct - Options show legend', () => {
+        expect(markdownProcessor.process('![aaa{"showLegend":true}](fff)')).to.equal('<figure><img src="fff" alt="aaa"><figcaption>aaa</figcaption></figure>');
+    })
     it('Simple line - Correct - Options width & height', () => {
         expect(markdownProcessor.process('![aaa{"width":"100px","height":"120px"}](fff)')).to.equal('<img src="fff" alt="aaa" width="100px" height="120px">');
+    })
+    it('Simple line - Correct - Options width & height & showLegend disable', () => {
+        expect(markdownProcessor.process('![aaa{"width":"100px","height":"120px", "showLegend": false}](fff)')).to.equal('<img src="fff" alt="aaa" width="100px" height="120px">');
+    })
+    it('Simple line - Correct - Options width & height & showLegend enable', () => {
+        expect(markdownProcessor.process('![aaa{"width":"100px","height":"120px", "showLegend": true}](fff)')).to.equal('<figure><img src="fff" alt="aaa" width="100px" height="120px"><figcaption>aaa</figcaption></figure>');
     })
     it('Simple line - Incorrect options', () => {
         expect(markdownProcessor.process('![aaa{"width":"100px"](fff )')).to.equal('<img src="fff " alt="aaa{"width":"100px"">');

@@ -11,7 +11,7 @@
 - [x] Strikethrough
 - [x] Link
 - [x] Image
-    - [ ] Legend
+    - [x] Legend
     - [x] Add style parameter
 - [ ] Array
 - [ ] Single ligne of code
