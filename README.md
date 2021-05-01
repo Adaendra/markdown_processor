@@ -12,7 +12,6 @@
 - [ ] Link
 - [ ] Image
     - [ ] Legend
-- [ ] Paragraph
 - [ ] Array
 - [ ] Single ligne of code
 - [ ] Bloc of code
@@ -23,6 +22,7 @@
     - [ ] Info
     - [ ] Warning
     - [ ] Error 
+- [ ] Paragraph
 
 ## TODO Doc
 - [ ] Title
