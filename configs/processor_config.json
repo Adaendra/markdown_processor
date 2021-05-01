@@ -13,6 +13,7 @@
     "italic",
     "strikethrough",
     "image",
-    "link"
+    "link",
+    "array"
   ]
 }

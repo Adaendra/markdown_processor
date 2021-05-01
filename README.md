@@ -13,7 +13,7 @@
 - [x] Image
     - [x] Legend
     - [x] Add style parameter
-- [ ] Array
+- [x] Array
 - [ ] Single ligne of code
 - [ ] Bloc of code
 - [ ] Task list
