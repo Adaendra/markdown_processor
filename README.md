@@ -14,8 +14,7 @@
     - [x] Legend
     - [x] Add style parameter
 - [x] Array
-- [ ] Single ligne of code
-- [ ] Bloc of code
+- [x] Bloc of code
 - [ ] Task list
 - [ ] Definitions
 - [ ] Blocquote
@@ -39,7 +38,6 @@
     - [ ] Legend
 - [ ] Paragraph
 - [ ] Array
-- [ ] Single ligne of code
 - [ ] Bloc of code
 - [ ] Task list
 - [ ] Definitions
@@ -49,3 +47,5 @@
     - [ ] Warning
     - [ ] Error 
 
+## Technologies used
+- https://highlightjs.org
