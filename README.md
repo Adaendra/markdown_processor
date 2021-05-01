@@ -9,9 +9,10 @@
 - [x] Bold
 - [x] Italic
 - [x] Strikethrough
-- [ ] Link
-- [ ] Image
+- [x] Link
+- [x] Image
     - [ ] Legend
+    - [ ] Add style parameter
 - [ ] Array
 - [ ] Single ligne of code
 - [ ] Bloc of code

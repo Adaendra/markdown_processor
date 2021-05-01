@@ -12,6 +12,7 @@
     "bold",
     "italic",
     "strikethrough",
+    "image",
     "link"
   ]
 }
