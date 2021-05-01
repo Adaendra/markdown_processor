@@ -15,7 +15,7 @@
     - [x] Add style parameter
 - [x] Array
 - [x] Bloc of code
-- [ ] Task list
+- [x] Task list
 - [ ] Definitions
 - [ ] Blocquote
     - [ ] Normal
