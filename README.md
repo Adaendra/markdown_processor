@@ -12,7 +12,7 @@
 - [x] Link
 - [x] Image
     - [ ] Legend
-    - [ ] Add style parameter
+    - [x] Add style parameter
 - [ ] Array
 - [ ] Single ligne of code
 - [ ] Bloc of code
