@@ -17,11 +17,11 @@
 - [x] Bloc of code
 - [x] Task list
 - [x] Definitions
-- [ ] Blocquote
-    - [ ] Normal
-    - [ ] Info
-    - [ ] Warning
-    - [ ] Error 
+- [x] Blockquote
+    - [x] Normal
+    - [x] Info
+    - [x] Warning
+    - [x] Error 
 - [ ] Paragraph
 
 ## TODO Doc
@@ -41,7 +41,7 @@
 - [ ] Bloc of code
 - [ ] Task list
 - [ ] Definitions
-- [ ] Blocquote
+- [ ] Blockquote
     - [ ] Normal
     - [ ] Info
     - [ ] Warning

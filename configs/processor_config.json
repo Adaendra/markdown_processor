@@ -1,5 +1,6 @@
 {
   "processors" : [
+    "blockquote",
     "h1",
     "h2",
     "h3",
