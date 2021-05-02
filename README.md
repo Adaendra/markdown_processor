@@ -16,7 +16,7 @@
 - [x] Array
 - [x] Bloc of code
 - [x] Task list
-- [ ] Definitions
+- [x] Definitions
 - [ ] Blocquote
     - [ ] Normal
     - [ ] Info
