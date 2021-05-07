@@ -10,11 +10,13 @@ let test = "";
 console.log(test);
         
 \`\`\`
-`)).to.equal(`<pre><span class="hljs-keyword">let</span> test = <span class="hljs-string">&quot;&quot;</span>;
+`)).to.equal(`<div class='paragraph'>
+<pre><span class="hljs-keyword">let</span> test = <span class="hljs-string">&quot;&quot;</span>;
 
 <span class="hljs-built_in">console</span>.log(test);
         
 </pre>
-`);
+
+</div>`);
     })
 })

@@ -4,27 +4,44 @@ var expect  = require("chai").expect;
 
 describe("List processor", () => {
     it('Single line -', () => {
-        expect(markdownProcessor.process(`- test`)).to.equal(`\n<ul><li>test</li></ul>\n`);
+        expect(markdownProcessor.process(`- test`)).to.equal(`<div class='paragraph'>
+
+<ul><li>test</li></ul>
+
+</div>`);
     })
     it('Single line *', () => {
-        expect(markdownProcessor.process(`* test`)).to.equal(`\n<ul><li>test</li></ul>\n`);
+        expect(markdownProcessor.process(`* test`)).to.equal(`<div class='paragraph'>
+
+<ul><li>test</li></ul>
+
+</div>`);
     })
     it('Single line +', () => {
-        expect(markdownProcessor.process(`+ test`)).to.equal(`\n<ul><li>test</li></ul>\n`);
+        expect(markdownProcessor.process(`+ test`)).to.equal(`<div class='paragraph'>
+
+<ul><li>test</li></ul>
+
+</div>`);
     })
     it('Multilines', () => {
         expect(markdownProcessor.process(`
 - test
 + test 2
 * test 3
-`)).to.equal(`
-\n<ul><li>test
+`)).to.equal(`<div class='paragraph'>
+
+
+<ul><li>test
 </li></ul>
-\n<ul><li>test 2
+
+<ul><li>test 2
 </li></ul>
-\n<ul><li>test 3
+
+<ul><li>test 3
 </li></ul>
-`);
+
+</div>`);
     })
     it('Multilines - Sub List', () => { // TODO
         expect(markdownProcessor.process(`
@@ -43,9 +60,11 @@ describe("List processor", () => {
 d
 
 d
-`)).to.equal(`
+`)).to.equal(`<div class='paragraph'>
+
 <h1>titre</h1>
-\n<ul><li>test
+
+<ul><li>test
 <ul>
 <li>a
 </li>aa
@@ -66,8 +85,12 @@ d
 </li></ul>
 d
 
+
+</div>
+<div class='paragraph'>
 d
-`)
+
+</div>`)
     })
     it('Multilines - Sub List with tasks', () => { // TODO
         expect(markdownProcessor.process(`
@@ -86,7 +109,8 @@ d
 d
 
 d
-`)).to.equal(`
+`)).to.equal(`<div class='paragraph'>
+
 <h1>titre</h1>
 
 <ul><li>test
@@ -110,8 +134,12 @@ d
 </li></ul>
 d
 
+
+</div>
+<div class='paragraph'>
 d
-`)
+
+</div>`)
     })
 })
 
@@ -135,7 +163,8 @@ d
 d
         1. test 4
 1. test 5
-`)).to.equal(`
+`)).to.equal(`<div class='paragraph'>
+
 <h1>titre</h1>
 
 <ul><li>1.test
@@ -159,11 +188,15 @@ aa
 
 d
 
+
+</div>
+<div class='paragraph'>
 d
         1. test 4
 
 <ul><li>1.test 5
 </li></ul>
-`);
+
+</div>`);
     })
 })

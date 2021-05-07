@@ -22,7 +22,7 @@
     - [x] Info
     - [x] Warning
     - [x] Error 
-- [ ] Paragraph
+- [x] Paragraph
 
 ## TODO Doc
 - [ ] Title
