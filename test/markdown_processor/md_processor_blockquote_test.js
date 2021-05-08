@@ -5,19 +5,21 @@ describe("Blockquote processor", () => {
     describe("Simple blockquote", () => { // TODO
         it('Normal', () => {
             expect(markdownProcessor.process(`> test
->
-> a
+> c
+> **a**
+> b
 a
 > coucou
 `)).to.equal(`<div class='paragraph'>
 <div class='blockquote '>
- test
-
- a
+<div><div><div><div> test</div>
+ c</div>
+ <b>a</b></div>
+ b</div>
 </div>
 a
 <div class='blockquote '>
- coucou
+<div> coucou</div>
 </div>
 
 </div>`);
@@ -30,12 +32,12 @@ a
 > coucou
 `)).to.equal(`<div class='paragraph'>
 <div class='blockquote info'>
-
- a
+<div><div></div>
+ a</div>
 </div>
 a
 <div class='blockquote '>
- coucou
+<div> coucou</div>
 </div>
 
 </div>`);
@@ -48,12 +50,12 @@ a
 > coucou
 `)).to.equal(`<div class='paragraph'>
 <div class='blockquote warning'>
-
- a
+<div><div></div>
+ a</div>
 </div>
 a
 <div class='blockquote '>
- coucou
+<div> coucou</div>
 </div>
 
 </div>`);
@@ -66,12 +68,12 @@ a
 > coucou
 `)).to.equal(`<div class='paragraph'>
 <div class='blockquote alert'>
-
- a
+<div><div></div>
+ a</div>
 </div>
 a
 <div class='blockquote '>
- coucou
+<div> coucou</div>
 </div>
 
 </div>`);
@@ -85,14 +87,14 @@ a
 > coucou
 `)).to.equal(`<div class='paragraph'>
 <div class='blockquote '>
-
+<div><div></div>
 <div class='blockquote '>
- a
+<div> a</div></div>
 </div>
 </div>
 a
 <div class='blockquote '>
- coucou
+<div> coucou</div>
 </div>
 
 </div>`);
@@ -105,14 +107,14 @@ a
 > coucou
 `)).to.equal(`<div class='paragraph'>
 <div class='blockquote info'>
-
+<div><div></div>
 <div class='blockquote '>
- a
+<div> a</div></div>
 </div>
 </div>
 a
 <div class='blockquote '>
- coucou
+<div> coucou</div>
 </div>
 
 </div>`);
@@ -125,14 +127,14 @@ a
 > coucou
 `)).to.equal(`<div class='paragraph'>
 <div class='blockquote warning'>
-
+<div><div></div>
 <div class='blockquote '>
- a
+<div> a</div></div>
 </div>
 </div>
 a
 <div class='blockquote '>
- coucou
+<div> coucou</div>
 </div>
 
 </div>`);
@@ -145,14 +147,14 @@ a
 > coucou
 `)).to.equal(`<div class='paragraph'>
 <div class='blockquote alert'>
-
+<div><div></div>
 <div class='blockquote '>
- a
+<div> a</div></div>
 </div>
 </div>
 a
 <div class='blockquote '>
- coucou
+<div> coucou</div>
 </div>
 
 </div>`);
@@ -168,15 +170,16 @@ a
 > coucou
 `)).to.equal(`<div class='paragraph'>
 <div class='blockquote '>
- a
-
-<div class='blockquote info'>
- a
+<div><div><div><div> a</div>
+</div>
+<div class='blockquote '>
+<div><div> <b>[INFO]</b></div></div>
+ a</div></div>
 </div>
 </div>
 a
 <div class='blockquote '>
- coucou
+<div> coucou</div>
 </div>
 
 </div>`);
@@ -190,15 +193,16 @@ a
 > coucou
 `)).to.equal(`<div class='paragraph'>
 <div class='blockquote '>
- a
-
-<div class='blockquote warning'>
- a
+<div><div><div><div> a</div>
+</div>
+<div class='blockquote '>
+<div><div> <b>[WARNING]</b></div></div>
+ a</div></div>
 </div>
 </div>
 a
 <div class='blockquote '>
- coucou
+<div> coucou</div>
 </div>
 
 </div>`);
@@ -212,15 +216,16 @@ a
 > coucou
 `)).to.equal(`<div class='paragraph'>
 <div class='blockquote '>
- a
-
-<div class='blockquote alert'>
- a
+<div><div><div><div> a</div>
+</div>
+<div class='blockquote '>
+<div><div> <b>[ALERT]</b></div></div>
+ a</div></div>
 </div>
 </div>
 a
 <div class='blockquote '>
- coucou
+<div> coucou</div>
 </div>
 
 </div>`);
@@ -237,8 +242,8 @@ a> coucou
 <div>test</div>
 `)).to.equal(`<div class='paragraph'>
 <div class='blockquote alert'>
-
- a
+<div><div></div>
+ a</div>
 </div>
 a
 a> coucou
@@ -260,7 +265,7 @@ a> coucou
 <div>test</div>
 `)).to.equal(`<div class='paragraph'>
 <div class='blockquote alert'>
-
+<div></div>
 </div>
 >>a
 a
