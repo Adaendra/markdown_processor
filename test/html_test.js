@@ -14,18 +14,18 @@ describe("HTML Generator", () => {
 
 > test
 > **test**
->> *coucou*
+>> *hi there*
 
 > **[INFO]**
-> Ceci est une info
+> This is an info panel
 
 > **[WARNING]**
-> Ceci est un warning
+> This is a warning
 
 > **[ALERT]**
-> Ceci est une alerte
+> This is an alert! /!\\
 
-~~strike~~
+This is a dummy text with a ~~strike~~ in the middle.
 
 ---
 

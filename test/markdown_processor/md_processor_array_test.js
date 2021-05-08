@@ -18,7 +18,7 @@ a
 
 </div>
 <div class='paragraph'>
-<table>
+<table cellspacing='0'>
 <tr><th>tests</th><th>tr</th></tr>
 <tr><td>e</td><td>er</td></tr>
 <tr><td>e</td></tr>
@@ -37,7 +37,7 @@ c
 |e|er|t|t|
 |e
 |a|`)).to.equal(`<div class='paragraph'>
-<table>
+<table cellspacing='0'>
 <tr><th>tests</th><th>tr</th></tr>
 <tr><td>e</td><td>er</td></tr>
 <tr><td>e</td></tr>
@@ -53,7 +53,7 @@ c
 |e
 |a|
 `)).to.equal(`<div class='paragraph'>
-<table>
+<table cellspacing='0'>
 <tr><th>tests</th><th>tr</th></tr>
 <tr><td>e</td><td>er</td></tr>
 <tr><td>e</td></tr>
@@ -70,7 +70,7 @@ c
 |e
 |a|
 `)).to.equal(`<div class='paragraph'>
-<table>
+<table cellspacing='0'>
 <tr><th>tests</th><th>tr</th></tr>
 <tr><td>e</td><td>er</td></tr>
 </table>
@@ -91,7 +91,7 @@ a
 |e
 |a|
 `)).to.equal(`<div class='paragraph'>
-<table>
+<table cellspacing='0'>
 <tr><th>tests</th><th>tr</th></tr>
 <tr><td>e</td><td>er</td></tr>
 </table>
@@ -109,7 +109,7 @@ a
 |e
 |a|
 `)).to.equal(`<div class='paragraph'>
-<table>
+<table cellspacing='0'>
 <tr><th>tests</th><th>tr</th></tr>
 <tr><td>e</td><td>er</td></tr>
 </table>
