@@ -1,0 +1,166 @@
+/* ----- IMPORTS ----- */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* ----- COLOR ----- */
+:root {
+    --grey-darker: 85,97,119;
+    --grey-dark: 112,127,153;
+    --grey: 141,153,174;
+    --grey-light: 183,191,204;
+    --grey-lighter: 219,223,230;
+
+    --blue: 17, 138, 178;
+    --green: 6, 214, 160;
+    --yellow: 255, 209, 102;
+    --red: 217, 4, 41;
+}
+
+/* ----- BODY ----- */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    body {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+/* ----- PARAGRAPH ----- */
+.paragraph {
+    width : 100%;
+    overflow: hidden;
+}
+
+/* ----- TITLES ----- */
+h1 {
+    font-size: 2.2em;
+    font-weight: 900;
+    margin-left: 8px;
+    margin-bottom: 20px;
+    margin-top: 12px;
+}
+h2 {
+    font-size: 2.0em;
+    font-weight: 600;
+    margin-left: 16px;
+    margin-bottom: 16px;
+    margin-top: 12px;
+}
+h3 {
+    font-size: 1.8em;
+    font-weight: 500;
+    margin-left: 24px;
+    margin-bottom: 12px;
+    margin-top: 8px;
+}
+h4 {
+    font-size: 1.6em;
+    font-weight: 400;
+    margin-left: 32px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+h5 {
+    font-size: 1.4em;
+    font-weight: 300;
+    margin-left: 40px;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+h6 {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-left: 48px;
+    font-style: italic;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+/* ----- BLOCKQUOTE ----- */
+.blockquote {
+    width: 100%;
+    border-left: solid rgba(var(--grey-dark), 0.7) 4px;
+    padding: 4px 8px;
+    margin: 8px 4px;
+    background-color: rgba(var(--grey-lighter), 0.4);
+}
+
+.info {
+    border-left: solid rgba(var(--blue), 0.7) 4px;
+    background-color: rgba(var(--blue), 0.4);
+}
+
+.warning {
+    border-left: solid rgba(var(--yellow), 0.7) 4px;
+    background-color: rgba(var(--yellow), 0.4);
+}
+
+.alert {
+    border-left: solid rgba(var(--red), 0.7) 4px;
+    background-color: rgba(var(--red), 0.4);
+}
+
+/* ----- FIGURE ----- */
+figure {
+    width: 100%;
+    text-align: center;
+}
+
+figure > figcaption {
+    text-align: center;
+    opacity: 0.8;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+/* ----- HORIZONTAL RULE ----- */
+.horizontal_rule {
+    width: 60%;
+    margin-left: 20%;
+    border-top: solid rgba(var(--grey-light), 0.4) 1px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/* ----- CODE BLOCK ----- */
+pre {
+    border: solid rgba(var(--grey-dark), 0.8) 1px;
+    padding: 8px 0px;
+}
+
+/* ----- TABLE ----- */
+th {
+    font-weight: 500;
+    background-color: rgb(var(--grey-dark));
+    color: white;
+    padding: 4px;
+}
+td{
+    padding: 4px;
+}
+tr:nth-child(even) {
+    background-color: rgb(var(--grey-lighter));
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(var(--grey-light));
+}
+
+/* ----- DEFINITION ----- */
+dt {
+    font-weight: 500;
+}
+
+dd {
+    font-style: italic;
+}
