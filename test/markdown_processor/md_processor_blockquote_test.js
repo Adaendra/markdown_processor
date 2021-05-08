@@ -1,10 +1,10 @@
-let markdownProcessor = require("../index");
+let markdownProcessor = require("../../index").markdownProcessor;
 
 var expect  = require("chai").expect;
 describe("Blockquote processor", () => {
-describe("Simple blockquote", () => { // TODO
-    it('Normal', () => {
-        expect(markdownProcessor.process(`> test
+    describe("Simple blockquote", () => { // TODO
+        it('Normal', () => {
+            expect(markdownProcessor.process(`> test
 >
 > a
 a
@@ -21,9 +21,9 @@ a
 </div>
 
 </div>`);
-    })
-    it('Info', () => {
-        expect(markdownProcessor.process(`> **[INFO]**
+        })
+        it('Info', () => {
+            expect(markdownProcessor.process(`> **[INFO]**
 >
 > a
 a
@@ -39,9 +39,9 @@ a
 </div>
 
 </div>`);
-    })
-    it('Warning', () => {
-        expect(markdownProcessor.process(`> **[WARNING]**
+        })
+        it('Warning', () => {
+            expect(markdownProcessor.process(`> **[WARNING]**
 >
 > a
 a
@@ -57,9 +57,9 @@ a
 </div>
 
 </div>`);
-    })
-    it('Alert', () => {
-        expect(markdownProcessor.process(`> **[ALERT]**
+        })
+        it('Alert', () => {
+            expect(markdownProcessor.process(`> **[ALERT]**
 >
 > a
 a
@@ -75,11 +75,11 @@ a
 </div>
 
 </div>`);
+        })
     })
-})
-describe("Multiple blockquote - Parent", () => {
-    it('Normal', () => {
-        expect(markdownProcessor.process(`>
+    describe("Multiple blockquote - Parent", () => {
+        it('Normal', () => {
+            expect(markdownProcessor.process(`>
 >> a
 a
 > coucou
@@ -96,9 +96,9 @@ a
 </div>
 
 </div>`);
-    })
-    it('Info', () => {
-        expect(markdownProcessor.process(`> **[INFO]**
+        })
+        it('Info', () => {
+            expect(markdownProcessor.process(`> **[INFO]**
 >
 >> a
 a
@@ -116,9 +116,9 @@ a
 </div>
 
 </div>`);
-    })
-    it('Warning', () => {
-        expect(markdownProcessor.process(`> **[WARNING]**
+        })
+        it('Warning', () => {
+            expect(markdownProcessor.process(`> **[WARNING]**
 >
 >> a
 a
@@ -136,9 +136,9 @@ a
 </div>
 
 </div>`);
-    })
-    it('Alert', () => {
-        expect(markdownProcessor.process(`> **[ALERT]**
+        })
+        it('Alert', () => {
+            expect(markdownProcessor.process(`> **[ALERT]**
 >
 >> a
 a
@@ -156,11 +156,11 @@ a
 </div>
 
 </div>`);
+        })
     })
-})
-describe("Multiple blockquote - Child", () => {
-    it('Info', () => {
-        expect(markdownProcessor.process(`> a
+    describe("Multiple blockquote - Child", () => {
+        it('Info', () => {
+            expect(markdownProcessor.process(`> a
 >
 >> **[INFO]**
 >> a
@@ -180,9 +180,9 @@ a
 </div>
 
 </div>`);
-    })
-    it('Warning', () => {
-        expect(markdownProcessor.process(`> a
+        })
+        it('Warning', () => {
+            expect(markdownProcessor.process(`> a
 >
 >> **[WARNING]**
 >> a
@@ -202,9 +202,9 @@ a
 </div>
 
 </div>`);
-    })
-    it('Alert', () => {
-        expect(markdownProcessor.process(`> a
+        })
+        it('Alert', () => {
+            expect(markdownProcessor.process(`> a
 >
 >> **[ALERT]**
 >> a
@@ -224,11 +224,11 @@ a
 </div>
 
 </div>`);
+        })
     })
-})
-describe("Incorrect cases", () => {
-    it('Incorrect blockquote', () => {
-        expect(markdownProcessor.process(`> **[ALERT]**
+    describe("Incorrect cases", () => {
+        it('Incorrect blockquote', () => {
+            expect(markdownProcessor.process(`> **[ALERT]**
 >
 > a
 a
@@ -249,9 +249,9 @@ a> coucou
 <div>test</div>
 
 </div>`);
-    })
-    it('Incorrect blockquote Child', () => {
-        expect(markdownProcessor.process(`> **[ALERT]**
+        })
+        it('Incorrect blockquote Child', () => {
+            expect(markdownProcessor.process(`> **[ALERT]**
 >
 >>a
 a
@@ -272,6 +272,6 @@ a> coucou
 <div>test</div>
 
 </div>`);
+        })
     })
-})
 })

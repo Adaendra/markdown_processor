@@ -1,9 +1,9 @@
-let markdownProcessor = require("../index");
+let markdownProcessor = require("../../index").markdownProcessor;
 
 var expect  = require("chai").expect;
 
-describe("Array processor", () => { // TODO
-    it('Multiline 1', () => {
+describe("Array processor", () => {
+    it('Array with another paragraph', () => {
         expect(markdownProcessor.process(`a
 
 |tests|tr|
@@ -31,7 +31,7 @@ a
 c
 </div>`);
     })
-    it('Multiline 2', () => {
+    it('Array alone', () => {
         expect(markdownProcessor.process(`|tests|tr|
 |---|---
 |e|er|t|t|
@@ -46,7 +46,7 @@ c
 
 </div>`);
     })
-    it('Multiline 3', () => {
+    it('Array with some lines with more column than defined.', () => {
         expect(markdownProcessor.process(`|tests|tr|
 |---|---
 |e|er|t|t|
@@ -62,7 +62,7 @@ c
 
 </div>`);
     })
-    it('Multiline 4', () => {
+    it('Array with an empty space between two lines', () => {
         expect(markdownProcessor.process(`|tests|tr|
 |---|---
 |e|er|t|t|
@@ -83,7 +83,7 @@ c
 
 </div>`);
     })
-    it('Multiline 5', () => {
+    it('Array with a non array line', () => {
         expect(markdownProcessor.process(`|tests|tr|
 |---|---
 |e|er|t|t|
@@ -101,7 +101,7 @@ a
 
 </div>`);
     })
-    it('Multiline 6', () => {
+    it('Array with a non array line 2', () => {
         expect(markdownProcessor.process(`|tests|tr|
 |---|---
 |e|er|t|t|

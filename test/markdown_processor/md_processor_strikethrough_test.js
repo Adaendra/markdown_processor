@@ -1,20 +1,22 @@
-let markdownProcessor = require("../index");
+let markdownProcessor = require("../../index").markdownProcessor;
 
 var expect  = require("chai").expect;
 
 describe("Bold processor", () => { // TODO
     it('Simple line', () => {
-        expect(markdownProcessor.process('a**e** vc')).to.equal('<div class=\'paragraph\'>\na<b>e</b> vc\n</div>');
+        expect(markdownProcessor.process('a~~e~~ vc')).to.equal(`<div class='paragraph'>
+a<strike>e</strike> vc
+</div>`);
     })
     it('Multiline', () => {
         expect(markdownProcessor.process(`a
 **
-**b**
+~~b~~
 **
 c`)).to.equal(`<div class='paragraph'>
 a
 **
-<b>b</b>
+<strike>b</strike>
 **
 c
 </div>`);

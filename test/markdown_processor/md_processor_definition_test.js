@@ -1,4 +1,4 @@
-let markdownProcessor = require("../index");
+let markdownProcessor = require("../../index").markdownProcessor;
 
 var expect  = require("chai").expect;
 
