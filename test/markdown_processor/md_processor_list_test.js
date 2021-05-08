@@ -242,4 +242,29 @@ d
 
 </div>`);
     })
+    it('Mix ordered list and classic list', () => {
+        expect(markdownProcessor.process(`1. az
+- ez
+7. az
+q
+9. ee
+
+`)).to.equal(`<div class='paragraph'>
+
+<ul><li>1.az
+</li></ul>
+
+<ul><li>ez
+</li></ul>
+
+<ul><li>1.az</li></ul>
+
+q
+
+<ul><li>1.ee
+
+</li></ul>
+
+</div>`);
+    })
 })
