@@ -1,6 +1,7 @@
 # Folders
 .idea/**/*
 node_modules/**/*
+tmp/**/*
 
 # Files
 package-lock.json
