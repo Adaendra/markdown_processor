@@ -199,4 +199,47 @@ d
 
 </div>`);
     })
+    it('Without sublist', () => {
+        expect(markdownProcessor.process(`1. az
+1. ez
+7. az
+
+`)).to.equal(`<div class='paragraph'>
+
+<ul><li>1.az</li></ul>
+
+
+<ul><li>2.ez</li></ul>
+
+
+<ul><li>3.az
+
+</li></ul>
+
+</div>`);
+    })
+    it('Without sublist but with space', () => {
+        expect(markdownProcessor.process(`1. az
+1. ez
+
+7. az
+
+`)).to.equal(`<div class='paragraph'>
+
+<ul><li>1.az</li></ul>
+
+
+<ul><li>2.ez
+
+</li></ul>
+
+</div>
+<div class='paragraph'>
+
+<ul><li>1.az
+
+</li></ul>
+
+</div>`);
+    })
 })
