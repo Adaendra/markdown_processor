@@ -1,30 +1,16 @@
 # RPG Markdown Processor
 
-## TODO Feature
-- [x] Title
-- [x] List
-- [x] SubList
-- [x] Ordered list
-- [x] Horizontal rule
-- [x] Bold
-- [x] Italic
-- [x] Strikethrough
-- [x] Link
-- [x] Image
-    - [x] Legend
-    - [x] Add style parameter
-- [x] Array
-- [x] Bloc of code
-- [x] Task list
-- [x] Definitions
-- [x] Blockquote
-    - [x] Normal
-    - [x] Info
-    - [x] Warning
-    - [x] Error 
-- [x] Paragraph
+![GitHub package.json Version](https://img.shields.io/github/package-json/v/Adaendra/markdown_processor?color=brightgreen)
 
-## TODO Doc
+Project to make personalized files from markdown files.
+
+---
+
+## TODO 
+### Feature
+- [ ] CLI
+
+### Doc
 - [ ] Title
 - [ ] List
 - [ ] SubList
