@@ -3,10 +3,18 @@ const chalk = require('chalk')
 
 let htmlProcessor = require("../lib/index").htmlGenerator;
 
-function process () {
+function process (options) {
     console.log(
         chalk.blue.bold('Begin the Markdown Processing')
     )
+
+    if (!options.name) {
+        options.name = Date.now()
+    }
+
+    console.log(chalk.blue.bold('File name : ' + options.name + '.html'))
+    console.log(chalk.blue.bold('File path : ' + options.destination))
+
     // TODO : Mettre la mise en place du process
     // TODO : Si on a aucun contenu (direct ou fichier), lancer une erreur
     /* const todoList = conf.get('todo-list')

@@ -38,3 +38,8 @@ Project to make personalized files from markdown files.
 
 ## Technologies used
 - https://highlightjs.org
+
+## Commands
+```
+npm i -g 
+```
