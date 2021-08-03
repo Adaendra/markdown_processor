@@ -1,6 +1,6 @@
 # RPG Markdown Processor
 
-![GitHub package.json Version](https://img.shields.io/github/package-json/v/Adaendra/markdown_processor?color=brightgreen)
+![GitHub package.json Version](https://img.shields.io/github/package-json/v/Adaendra/markdown_processor?color=brightgreen) ![GitHub License](https://img.shields.io/github/license/Adaendra/markdown_processor)
 
 Project to make personalized files from markdown files.
 
