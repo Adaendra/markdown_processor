@@ -23,7 +23,7 @@ program
         '-f, --file <file_to_process>',
         'Path to the MarkDown to process.'
     )
-    .requiredOption(
+    .option(
         '-t, --titre <title_in_html_file>',
         'Title to show in the HTML file',
         ''

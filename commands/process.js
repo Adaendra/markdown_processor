@@ -21,30 +21,6 @@ function process (options) {
     console.log(chalk.blue.bold('File path          : ' + options.destination))
     console.log(chalk.blue.bold('File origin path   : ' + options.file))
 
-    // TODO : Mettre la mise en place du process
-    // TODO : Si on a aucun contenu (direct ou fichier), lancer une erreur
-    /* const todoList = conf.get('todo-list')
-    if (todoList && todoList.length) {
-        console.log(
-            chalk.blue.bold('Tasks in green are done. Tasks in yellow are still not done.')
-        )
-        todoList.forEach((task, index) => {
-            if (task.done) {
-                console.log(
-                    chalk.greenBright(`${index}. ${task.text}`)
-                )
-            } else {
-                console.log(
-                    chalk.yellowBright(`${index}. ${task.text}`)
-                )
-            }
-        })
-    } else {
-        console.log(
-            chalk.red.bold('You don\'t have any tasks yet.')
-        )
-    } */
-
     fs.readFile(options.file, {encoding: 'utf-8'}, function (err, data) {
         if (!err) {
             htmlProcessor.generateHtmlFile(

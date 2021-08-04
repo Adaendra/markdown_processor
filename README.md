@@ -8,7 +8,9 @@ Project to make personalized files from markdown files.
 
 ## TODO 
 ### Feature
-- [ ] CLI
+- [ ] Generate other files
+    - [ ] PDF
+    - [ ] JPG
 
 ### Doc
 - [ ] Title
@@ -33,7 +35,14 @@ Project to make personalized files from markdown files.
     - [ ] Warning
     - [ ] Error 
 
+- [ ] CLI
+
 ## Documentation
+### Usage
+- [CLI](./documentation/cli.md)
+- [Typo feature](./documentation/typo_feature.md)
+
+### Development
 - [Unit Testing](./documentation/unit_testing.md)
 
 ## Technologies used
