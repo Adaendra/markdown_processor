@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Management of
     - code blocks
     - checkbox list
+- Default CSS style
 
 ## [0.1.0] - 2021-07-31
 ### Added

@@ -39,6 +39,7 @@ body {
 .paragraph {
     width : 100%;
     overflow: hidden;
+    margin-bottom: 16px;
 }
 
 /* ----- TITLES ----- */
@@ -163,4 +164,14 @@ dt {
 
 dd {
     font-style: italic;
+}
+
+/* ----- IMAGE ----- */
+img {
+    width: 100%;
+}
+
+figure {
+    margin-left: 0px;
+    margin-right: 0px;
 }

@@ -12,30 +12,6 @@ Project to make personalized files from markdown files.
     - [ ] PDF
     - [ ] JPG
 
-### Doc
-- [ ] Title
-- [ ] List
-- [ ] SubList
-- [ ] Ordered list
-- [ ] Horizontal rule
-- [ ] Bold
-- [ ] Italic
-- [ ] Strikethrough
-- [ ] Link
-- [ ] Image
-    - [ ] Legend
-- [ ] Paragraph
-- [ ] Array
-- [ ] Bloc of code
-- [ ] Task list
-- [ ] Definitions
-- [ ] Blockquote
-    - [ ] Normal
-    - [ ] Info
-    - [ ] Warning
-    - [ ] Error 
-
-- [ ] CLI
 
 ## Documentation
 ### Usage
