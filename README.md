@@ -6,7 +6,7 @@ Project to make personalized files from markdown files.
 
 ---
 
-## Style mode available
+## Themes available
 - default
 - rpg
 
