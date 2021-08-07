@@ -20,8 +20,8 @@ program
         './'
     )
     .requiredOption(
-        '-f, --file <file_to_process>',
-        'Path to the MarkDown to process.'
+        '-f, --file <files_to_process...>',
+        'Path to the MarkDown files to process.'
     )
     .option(
         '-t, --titre <title_in_html_file>',

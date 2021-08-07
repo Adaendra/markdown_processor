@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Changed
 - Documentation
+- CLI command to allow multiple files in entry [#3]
 
 ## [0.2.0] - 2021-08-07
 ### Added
