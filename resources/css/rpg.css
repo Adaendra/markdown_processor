@@ -1,0 +1,226 @@
+/* ----- IMPORTS ----- */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: "Solbera Imitation";
+    src:
+        local("Solbera Imitation"),
+        url("./resources/fonts/Solbera Imitation.otf"),
+        url("https://raw.githubusercontent.com/jonathonf/solbera-dnd-fonts/master/Solbera%20Imitation/Solbera%20Imitation.otf") format("opentype");
+}
+
+/* ----- COLOR ----- */
+:root {
+    --grey-darker: 85,97,119;
+    --grey-dark: 112,127,153;
+    --grey: 141,153,174;
+    --grey-light: 183,191,204;
+    --grey-lighter: 219,223,230;
+
+    --blue: 17, 138, 178;
+    --green: 6, 214, 160;
+    --yellow: 255, 209, 102;
+    --red: 217, 4, 41;
+
+    --brown: 110,54,41;
+
+    --light_brown: 201,173,106;
+    --old-paper: 224, 201, 166;
+}
+
+/* ----- BODY ----- */
+body {
+    font-family: 'Hahmlet', sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+    background-color: rgba(var(--old-paper), 0.6);
+    bottom: 1em;
+}
+
+@media screen and (max-width: 750px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 751px) {
+    body {
+        width: 60%;
+        margin-left: 20%;
+    }
+}
+
+/* ----- PARAGRAPH ----- */
+.paragraph {
+    width : 100%;
+    overflow: hidden;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+p {
+    width : 100%;
+    overflow: hidden;
+    margin-bottom: 16px;
+    text-align: justify;
+}
+
+p:first-of-type::first-letter {
+    -webkit-initial-letter: 4;
+    initial-letter: 4;
+    float: left;
+    font-size: 8em;
+    color: rgba(var(--brown), 1);
+    font-family: "Solbera Imitation";
+}
+
+/* ----- TITLES ----- */
+h1 {
+    font-size: 2.2em;
+    font-weight: 900;
+    margin-bottom: 20px;
+    margin-top: 12px;
+    font-family: 'Cinzel', serif;
+    color: rgba(var(--brown), 1);
+}
+h2 {
+    font-size: 2.0em;
+    font-weight: 800;
+    margin-bottom: 16px;
+    margin-top: 12px;
+    font-family: 'Cinzel', serif;
+    color: rgba(var(--brown), 1);
+}
+h3 {
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 12px;
+    margin-top: 8px;
+    font-family: 'Cinzel', serif;
+    color: rgba(var(--brown), 1);
+    border-bottom: solid rgba(var(--light_brown), 0.6) 2px;
+    width: 100%;
+}
+h4 {
+    font-size: 1.6em;
+    font-weight: 600;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-family: 'Cinzel', serif;
+    color: rgba(var(--brown), 1);
+}
+h5 {
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    font-family: 'Cinzel', serif;
+    color: rgba(var(--brown), 1);
+}
+h6 {
+    font-size: 1.2em;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 4px;
+    margin-top: 4px;
+    font-family: 'Cinzel', serif;
+    color: rgba(var(--brown), 1);
+}
+
+/* ----- BLOCKQUOTE ----- */
+.blockquote {
+    width: 100%;
+    border-left: solid rgba(var(--grey-dark), 0.7) 4px;
+    padding: 4px 8px;
+    margin: 8px 4px;
+    background-color: rgba(var(--grey-dark), 0.5);
+}
+
+.info {
+    border-left: solid rgba(var(--blue), 0.7) 4px;
+    background-color: rgba(var(--blue), 0.4);
+}
+
+.warning {
+    border-left: solid rgba(var(--yellow), 0.8) 4px;
+    background-color: rgba(var(--yellow), 0.6);
+}
+
+.alert {
+    border-left: solid rgba(var(--red), 0.7) 4px;
+    background-color: rgba(var(--red), 0.4);
+}
+
+/* ----- FIGURE ----- */
+figure {
+    width: 100%;
+    text-align: center;
+}
+
+figure > figcaption {
+    text-align: center;
+    opacity: 0.8;
+    font-style: italic;
+    font-size: 0.8em;
+}
+
+/* ----- HORIZONTAL RULE ----- */
+.horizontal_rule {
+    width: 60%;
+    margin-left: 20%;
+    border-top: solid rgba(var(--brown), 0.4) 1px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+/* ----- CODE BLOCK ----- */
+pre {
+    border: solid rgba(var(--grey-dark), 0.8) 1px;
+    padding: 8px 4px;
+    width: calc(100% - 10px);
+}
+
+/* ----- TABLE ----- */
+table {
+    width: 100%;
+}
+th {
+    font-weight: 500;
+    background-color: rgb(var(--brown));
+    color: white;
+    padding: 4px;
+}
+td{
+    padding: 4px;
+}
+tr:nth-child(even) {
+    background-color: rgb(var(--light_brown), 0.7);
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(var(--light_brown), 0.4);
+}
+
+/* ----- DEFINITION ----- */
+dt {
+    font-weight: 500;
+}
+
+dd {
+    font-style: italic;
+}
+
+/* ----- IMAGE ----- */
+img {
+    width: 100%;
+}
+
+figure {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+/* ----- LIST ----- */
+ul {
+    margin: 0px;
+}

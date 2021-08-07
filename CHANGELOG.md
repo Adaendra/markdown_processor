@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
-- CLI commands to use the processor
+- CLI commands to use the processor [#1]
     - process
         - title
         - name
@@ -15,6 +15,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Documentation
     - CLI
     - Typo feature
+- Style mode
+    - RPG [#8]
         
 ### Fixed
 - Management of

@@ -6,12 +6,12 @@ Project to make personalized files from markdown files.
 
 ---
 
-## TODO 
-### Feature
-- [ ] Generate other files
-    - [ ] PDF
-    - [ ] JPG
+## Style mode available
+- default
+- rpg
 
+
+---
 
 ## Documentation
 ### Usage
@@ -20,9 +20,7 @@ Project to make personalized files from markdown files.
 
 ### Development
 - [Unit Testing](./documentation/unit_testing.md)
-
-## Technologies used
-- https://highlightjs.org
+- [Technologies/Tool used](./documentation/references.md)
 
 ## Commands
 ```
