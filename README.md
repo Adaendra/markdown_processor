@@ -4,7 +4,7 @@
 
 Project to make personalized files from markdown files.
 
----
+<br/>
 
 ## Themes available
 - default

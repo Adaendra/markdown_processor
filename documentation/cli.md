@@ -17,8 +17,17 @@ Process a file to transform Markdown file.
 |**-t, --titre <title_in_html_file>**|Title to show in the HTML file|*/*| |no|
 |**--theme <css_theme>**|CSS Theme to use in the generated HTML file|- default<br/>- rpg|default|no|
 
+#### Notes
+##### Multiple files
+If you are listing multiple file to process, they will be added in the same order than listed in the command.
+
 ---
 
-## Notes
-### Multiple files
-If you are listing multiple file to process, they will be added in the same order than listed in the command.
+### generate_squeleton
+Generate a css squeleton to create a custom theme or clone an existing theme.
+
+#### Options
+|Name|Description|Choices|Default|Required|
+|---|---|---|---|---|
+|-n, --name <file_name_destination>|Name of the generated file. If not defined, the name will be the current timestamp.|*/*|*/*|no|
+|--theme <css_theme>|CSS Theme to copy|- default<br/>- rpg|*/*|no|

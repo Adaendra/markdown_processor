@@ -2,6 +2,7 @@
 
 const { program } = require('commander')
 const process = require('./commands/process')
+const generate_squeleton = require('./commands/generate_squeleton')
 
 program.version("0.1.0")
 
@@ -31,12 +32,23 @@ program
     .addOption(new program.Option(
         '--theme <css_theme>',
         'CSS Theme to use in the generated HTML file')
-        .choices(['default', 'rpg'])
-        .default('default')
+        .choices(['', 'default', 'rpg'])
     )
     .action(process)
 
-// TODO : Rajouter des options
-// - Le type de style que l'on veut -> Mettre une valeur par défaut (default) -> si le style n'existe pas, on lance une erreur.
+
+program
+    .command('generate_squeleton')
+    .option(
+        '-n, --name <file_name_destination>',
+        'Name of the generated file. If not defined, the name will be the current timestamp.'
+    )
+    .addOption(new program.Option(
+        '--theme <css_theme>',
+        'CSS Theme to copy')
+        .choices(['default', 'rpg'])
+    )
+    .description('Generate a css squeleton to create a custom theme or clone an existing theme.')
+    .action(generate_squeleton)
 
 program.parse()

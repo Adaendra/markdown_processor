@@ -1,0 +1,161 @@
+/* ----- IMPORTS ----- */
+/* ex : @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap'); */
+
+/* ----- COLOR ----- */
+:root {
+
+}
+
+/* ----- BODY ----- */
+body {
+
+}
+
+@media screen and (max-width: 750px) {
+    body {
+
+    }
+}
+
+@media screen and (min-width: 751px) {
+    body {
+
+    }
+}
+
+/* ----- PARAGRAPH ----- */
+.paragraph {
+
+}
+
+p {
+
+}
+
+p:first-of-type::first-letter {
+
+}
+
+/* ----- TITLES ----- */
+h1 {
+
+}
+h2 {
+
+}
+h3 {
+
+}
+h4 {
+
+}
+h5 {
+
+}
+h6 {
+
+}
+
+/* ----- BLOCKQUOTE ----- */
+.blockquote {
+
+}
+
+.info {
+
+}
+
+.warning {
+
+}
+
+.alert {
+
+}
+
+/* ----- FIGURE ----- */
+figure {
+
+}
+
+figure > figcaption {
+
+}
+
+/* ----- HORIZONTAL RULE ----- */
+.horizontal_rule {
+
+}
+
+/* ----- CODE BLOCK ----- */
+pre {
+
+}
+
+/* ----- TABLE ----- */
+table {
+
+}
+th {
+
+}
+td{
+
+}
+tr:nth-child(even) {
+
+}
+
+tr:nth-child(odd) {
+
+}
+
+/* ----- DEFINITION ----- */
+dt {
+
+}
+
+dd {
+
+}
+
+/* ----- IMAGE ----- */
+img {
+
+}
+
+figure {
+
+}
+
+/* ----- LIST ----- */
+ul {
+
+}
+li {
+
+}
+
+/* ----- ITALIC ----- */
+i {
+
+}
+
+/* ----- BOLD ----- */
+b {
+
+}
+
+/* ----- STRIKETHROUGH ----- */
+strike {
+
+}
+
+/* ----- CODE BLOCK ----- */
+pre {
+
+}
+
+code {
+
+}
