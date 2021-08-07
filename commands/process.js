@@ -17,17 +17,21 @@ function process (options) {
     }
     options.name = options.name + '.html'
 
-    console.log(chalk.blue.bold('File name          : ' + options.name ))
-    console.log(chalk.blue.bold('File path          : ' + options.destination))
-    console.log(chalk.blue.bold('File origin path   : ' + options.file))
+    console.log(chalk.gray.bold('File name          : ' + options.name ))
+    console.log(chalk.gray.bold('File path          : ' + options.destination))
+    console.log(chalk.gray.bold('File origin path   : ' + options.file))
+    console.log(chalk.gray.bold('CSS theme          : ' + options.theme))
 
     fs.readFile(options.file, {encoding: 'utf-8'}, function (err, data) {
         if (!err) {
             htmlProcessor.generateHtmlFile(
                 options.titre,
-                options.destination + "/" + options.name,
-                data
+                options.destination + options.name,
+                data,
+                options.theme
             )
+
+            console.log(chalk.blue.bold('Generated file with success :: ' + options.destination + options.name))
         } else {
             // console.log(err);
             console.log(chalk.red.bold("File " + options.file + " doesn't exist"))

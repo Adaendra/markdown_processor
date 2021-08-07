@@ -28,6 +28,12 @@ program
         'Title to show in the HTML file',
         ''
     )
+    .addOption(new program.Option(
+        '--theme <css_theme>',
+        'CSS Theme to use in the generated HTML file')
+        .choices(['default', 'rpg'])
+        .default('default')
+    )
     .action(process)
 
 // TODO : Rajouter des options
