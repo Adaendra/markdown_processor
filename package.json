@@ -1,6 +1,6 @@
 {
   "name": "rpg-markdown-processor",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,13 @@
   "license": "ISC",
   "dependencies": {
     "chai": "^4.3.4",
+    "chalk": "^4.1.2",
+    "commander": "^8.1.0",
+    "conf": "^10.0.1",
     "highlight.js": "^10.7.2",
     "mocha": "^8.3.2"
+  },
+  "bin": {
+    "md-processor": "index.js"
   }
 }

@@ -36,6 +36,9 @@ describe("Test 1", () => {
 
 ## Commands
 ### Starting tests
-> mocha
-
-> npm test
+```
+mocha
+```
+```
+npm test
+```
