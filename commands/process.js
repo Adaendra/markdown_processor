@@ -23,7 +23,11 @@ function process (options) {
     options.file.forEach(file => {
         console.log(chalk.gray.bold('- ' + file))
     })
-    console.log(chalk.gray.bold('CSS theme          : ' + options.theme))
+    if (options.customTheme) {
+        console.log(chalk.gray.bold('CSS custom theme   : ' + options.customTheme))
+    } else {
+        console.log(chalk.gray.bold('CSS theme          : ' + options.theme))
+    }
 
     let datas = ""
     let continueProcessing = true
@@ -41,7 +45,8 @@ function process (options) {
             options.titre,
             options.destination + options.name,
             datas,
-            options.theme
+            options.theme,
+            options.customTheme
         )
 
         console.log(chalk.blue.bold('Generated file with success :: ' + options.destination + options.name))

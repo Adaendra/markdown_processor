@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - CLI command to generate a theme squeleton or clone an existing theme [#7]
+- CLI option for **process** operation to use custom theme [#11]
 
 ### Changed
 - Documentation
