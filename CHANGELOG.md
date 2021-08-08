@@ -5,6 +5,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [0.3.0] - 2021-08-08
 ### Added
 - CLI command to generate a theme squeleton or clone an existing theme [#7]
 - CLI option for **process** operation to use custom theme [#11]

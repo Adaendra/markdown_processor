@@ -1,6 +1,6 @@
 {
-  "name": "rpg-markdown-processor",
-  "version": "0.2.0",
+  "name": "markdown-processor",
+  "version": "0.3.0",
   "description": "",
   "main": "index.js",
   "scripts": {
