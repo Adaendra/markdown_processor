@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - CLI option for **process** operation to use a folder as Markdown input. [#4]
+- Dark Theme [#2]
 
 ### Changed
 - Documentation

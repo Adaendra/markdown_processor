@@ -32,7 +32,7 @@ program
     .addOption(new program.Option(
         '--theme <css_theme>',
         'CSS Theme to use in the generated HTML file')
-        .choices(['', 'default', 'rpg'])
+        .choices(['', 'dark', 'default', 'rpg'])
         .default('default')
     )
     .option(
@@ -59,7 +59,7 @@ program
     .addOption(new program.Option(
         '--theme <css_theme>',
         'CSS Theme to copy')
-        .choices(['default', 'rpg'])
+        .choices(['dark', 'default', 'rpg'])
     )
     .description('Generate a css squeleton to create a custom theme or clone an existing theme.')
     .action(generate_squeleton)
