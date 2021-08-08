@@ -4,25 +4,40 @@
 
 Project to make personalized files from markdown files.
 
+*Examples*
+```
+# Process the TEST.md process
+md-processor process -f "TEST.md"
+
+# Process multiple files
+md-processor process -f "TEST.md" -f "TEST2.md"
+
+# Use a specific theme
+md-processor process -f "TEST.md" -t "rpg"
+```
+
 <br/>
 
 ## Themes available
 - default
 - rpg
 
+<br/>
 
 ---
 
+<br/>
+
 ## Documentation
+Links to the detailed documentation of the project.
+
 ### Usage
 - [CLI](./documentation/cli.md)
 - [Typo feature](./documentation/typo_feature.md)
 
 ### Development
-- [Unit Testing](./documentation/unit_testing.md)
+- [Development docs](./documentation/development.md)
 - [Technologies/Tool used](./documentation/references.md)
+- [Unit Testing](./documentation/unit_testing.md)
 
-## Commands
-```
-npm i -g 
-```
+
