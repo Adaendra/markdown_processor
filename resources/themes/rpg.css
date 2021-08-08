@@ -25,26 +25,30 @@
     --brown: 110,54,41;
 
     --light_brown: 201,173,106;
-    --old-paper: 224, 201, 166;
+    --old-paper: 236,223,202;
 }
 
 /* ----- BODY ----- */
 body {
     font-family: 'Hahmlet', sans-serif;
     font-size: 14px;
+    background-color: rgba(var(--old-paper));
+}
+
+.page {
     overflow-x: hidden;
-    background-color: rgba(var(--old-paper), 0.6);
+    background-color: rgba(var(--old-paper));
     bottom: 1em;
 }
 
 @media screen and (max-width: 750px) {
-    body {
+    .page {
         width: 100%;
     }
 }
 
 @media screen and (min-width: 751px) {
-    body {
+    .page {
         width: 60%;
         margin-left: 20%;
     }

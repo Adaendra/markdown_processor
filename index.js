@@ -33,10 +33,15 @@ program
         '--theme <css_theme>',
         'CSS Theme to use in the generated HTML file')
         .choices(['', 'default', 'rpg'])
+        .default('default')
     )
     .option(
         '--custom-theme <custom theme path>',
         'Path to the custom theme file'
+    )
+    .option(
+        '--page',
+        'Select this option to have a page format.'
     )
     .action(process)
 

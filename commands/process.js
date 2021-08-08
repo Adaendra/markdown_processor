@@ -46,7 +46,8 @@ function process (options) {
             options.destination + options.name,
             datas,
             options.theme,
-            options.customTheme
+            options.customTheme,
+            options.page
         )
 
         console.log(chalk.blue.bold('Generated file with success :: ' + options.destination + options.name))

@@ -17,6 +17,7 @@ Process a file to transform Markdown file.
 |**-t, --titre <title_in_html_file>**|Title to show in the HTML file|*/*| |no|
 |**--theme <css_theme>**|CSS Theme to use in the generated HTML file|- default<br/>- rpg|default|no|
 |**--custom-theme <custom theme path>**|Path to the custom theme file|*/*|*/*|no|
+|**--page**|Select this option to have a page format.|*/*|false|no|
 
 #### Notes
 ##### Multiple files
