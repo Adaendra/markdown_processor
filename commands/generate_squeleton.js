@@ -1,13 +1,19 @@
 const chalk = require('chalk')
 const fs = require('fs')
 
-
+/**
+ * Generate a squeleton for a new theme or clone an existing theme.
+ * @param options : Object
+ */
 function generate_squeleton (options) {
     let file_to_copy = "./resources/squeleton/css_squeleton.css"
+
+    // If a theme is selected, we will clone it.
     if (options.theme) {
         file_to_copy = "./resources/css/" + options.theme + ".css"
     }
 
+    // If no name was given, a generated name is set.
     if (!options.name) {
         options.name = Date.now()
     }

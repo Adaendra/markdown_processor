@@ -53,4 +53,5 @@ function process (options) {
         console.log(chalk.blue.bold('Generated file with success :: ' + options.destination + options.name))
     }
 }
+
 module.exports = process
