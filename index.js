@@ -20,7 +20,7 @@ program
         'Path to the generated file.',
         './'
     )
-    .requiredOption(
+    .option(
         '-f, --file <files_to_process...>',
         'Path to the MarkDown files to process.'
     )
@@ -42,6 +42,10 @@ program
     .option(
         '--page',
         'Select this option to have a page format.'
+    )
+    .option(
+        '--folder <folder>',
+        'Path to the folder with all the MarkDown files to process.'
     )
     .action(process)
 
