@@ -33,6 +33,8 @@ body {
     font-family: 'Hahmlet', sans-serif;
     font-size: 14px;
     background-color: rgba(var(--old-paper));
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
 }
 
 .page {
@@ -54,18 +56,26 @@ body {
     }
 }
 
+@media print {
+    @page {
+        margin: 0
+    }
+}
+
 /* ----- PARAGRAPH ----- */
 .paragraph {
     width : 100%;
     overflow: hidden;
-    margin-bottom: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     text-align: justify;
 }
 
 p {
     width : 100%;
     overflow: hidden;
-    margin-bottom: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
     text-align: justify;
 }
 

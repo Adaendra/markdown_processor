@@ -20,6 +20,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     overflow-x: hidden;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
 }
 
 .page {
@@ -36,6 +38,12 @@ body {
     .page {
         width: 60%;
         margin-left: 20%;
+    }
+}
+
+@media print {
+    @page {
+        margin: 0
     }
 }
 

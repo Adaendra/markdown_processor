@@ -26,6 +26,8 @@ body {
     font-size: 16px;
     overflow-x: hidden;
     background-color: rgba(var(--dark-background));
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
 }
 
 .page {
