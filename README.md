@@ -2,7 +2,7 @@
 
 ![GitHub package.json Version](https://img.shields.io/github/package-json/v/Adaendra/markdown_processor?color=brightgreen) ![GitHub License](https://img.shields.io/github/license/Adaendra/markdown_processor)
 
-Project to make personalized files from markdown files.
+Project to make personalized **HTML** or **pdf** files from **Markdown** files.
 
 *Examples*
 ```
