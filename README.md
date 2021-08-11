@@ -16,6 +16,12 @@ md-processor process -f "TEST.md" -f "TEST2.md"
 md-processor process -f "TEST.md" -t "rpg"
 ```
 
+## Prerequisite
+> **You must have pagedjs and pagedjs cli installed to generate pdf files.**
+> ```
+> npm install -g pagedjs-cli pagedjs
+> ```
+
 <br/>
 
 ## Themes available

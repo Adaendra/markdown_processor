@@ -1,30 +1,39 @@
-const conf = new (require('conf'))()
 const chalk = require('chalk')
 const fs = require('fs')
-const childProcess = require('child_process');
+const htmlProcessor = require("../lib/index").htmlGenerator;
+const cmd_utils = require("../lib/utils/cmd_utils")
+const file_utils = require("../lib/utils/file_utils")
 
-let htmlProcessor = require("../lib/index").htmlGenerator;
-
-
+/**
+ * Process some markdown files to or html/pdf...
+ * @param options : Object - Command options.
+ */
 async function process (options) {
-    if (!options.name) {
-        options.name = Date.now()
-    }
-    let html_name = options.name + '.html'
-    if (options.output == 'pdf') {
-        html_name = Date.now() + '.html'
-    }
-    const pdf_name = options.name + '.pdf'
-
-    if (options.file && options.folder) {
-        console.log(chalk.red.bold("Both 'file' and 'folder' parameters can be defined."))
-    } else if (!options.file && !options.folder) {
-        console.log(chalk.red.bold("One of 'file' and 'folder' parameters must be defined."))
-    } else {
-        if (options.folder) {
-            options.file = getFilesFromFolder(options.folder)
+    try {
+        // If any name is defined, generate on from timestamp
+        if (!options.name) {
+            options.name = Date.now()
+        }
+        let html_name = options.name + '.html'
+        // If the user asks for a pdf file, the html file must have a random temporary name.
+        if (options.output == 'pdf') {
+            html_name = Date.now() + '.html'
         }
 
+        // Return error if we have folder and files or none of them.
+        if (options.file && options.folder) {
+            throw "Both 'file' and 'folder' parameters can be defined."
+        }
+        if (!options.file && !options.folder) {
+            throw "One of 'file' and 'folder' parameters must be defined."
+        }
+
+        // Retrieve all the files if it was a folder in input.
+        if (options.folder) {
+            options.file = file_utils.getMarkdownFilesFromFolder(options.folder)
+        }
+
+        // Show to the terminal the options selected
         console.log(chalk.gray.bold('File name          : ' + options.name))
         console.log(chalk.gray.bold('File path          : ' + options.destination))
         console.log(chalk.gray.bold('Files to process   : '))
@@ -37,65 +46,45 @@ async function process (options) {
             console.log(chalk.gray.bold('CSS theme          : ' + options.theme))
         }
 
+        // Retrieve data from all files
         let datas = ""
-        let continueProcessing = true
         options.file.forEach(file_path => {
             try {
                 datas = datas + fs.readFileSync(file_path, {encoding: 'utf-8'}) + "\n"
             } catch (e) {
-                continueProcessing = false
-                console.log(chalk.red.bold("File " + file_path + " doesn't exist"))
+                throw "File " + file_path + " doesn't exist"
             }
         })
 
-        if (continueProcessing) {
-            console.log(
-                chalk.blue.bold('Begin the Markdown Processing')
-            )
-            htmlProcessor.generateHtmlFile(
-                options.titre,
-                options.destination + html_name,
-                datas,
-                options.theme,
-                options.customTheme,
-                options.output == 'pdf'
-            )
+        console.log(
+            chalk.blue.bold('Begin the Markdown Processing')
+        )
+        // Generate the html file
+        htmlProcessor.generateHtmlFile(
+            options.titre,
+            options.destination + html_name,
+            datas,
+            options.theme,
+            options.customTheme,
+            options.output == 'pdf'
+        )
 
-            console.log(chalk.blue.bold('Generated file with success :: ' + options.destination + options.name))
 
-            if (options.output == 'pdf') {
-                await sh('pagedjs-cli ' + options.destination + html_name + ' -o ' + options.destination + pdf_name);
-                fs.unlinkSync(options.destination + html_name)
-            }
+        if (options.output == 'pdf') {
+            // If the asked output is a pdf, generate the pdf and delete the html file.
+            await cmd_utils.sh('pagedjs-cli ' + options.destination + html_name + ' -o ' + options.destination + options.name + '.pdf');
+            fs.unlinkSync(options.destination + html_name)
+            console.log(chalk.blue.bold('Generated file with success :: ' + options.destination + options.name + '.pdf'))
+        } else {
+            console.log(chalk.blue.bold('Generated file with success :: ' + options.destination + html_name))
         }
+    } catch (e) {
+        console.log(chalk.red.bold(e))
     }
 }
 
-async function sh(cmd) {
-    return new Promise(function (resolve, reject) {
-        childProcess.exec(cmd, (err, stdout, stderr) => {
-            if (err) {
-                reject(err);
-            } else {
-                resolve({ stdout, stderr });
-            }
-        });
-    });
-}
 
-function getFilesFromFolder(folder) {
-    let result_files = []
-    var files_in_folder = fs.readdirSync(folder, {'withFileTypes' : true})
-    files_in_folder.forEach(file => {
-        console.log(file)
-        if (fs.lstatSync(folder + "/" + file.name).isDirectory()) {
-            getFilesFromFolder(folder + "/" + file.name).forEach(f => result_files.push(f))
-        } else if (file.name.endsWith(".md")) {
-            result_files.push(folder + "/" + file.name)
-        }
-    })
 
-    return result_files
-}
+
 
 module.exports = process
