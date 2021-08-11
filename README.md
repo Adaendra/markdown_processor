@@ -1,4 +1,4 @@
-# RPG Markdown Processor
+# Markdown Processor
 
 ![GitHub package.json Version](https://img.shields.io/github/package-json/v/Adaendra/markdown_processor?color=brightgreen) ![GitHub License](https://img.shields.io/github/license/Adaendra/markdown_processor)
 
@@ -25,6 +25,7 @@ md-processor process -f "TEST.md" -t "rpg"
 <br/>
 
 ## Themes available
+- dark
 - default
 - rpg
 
