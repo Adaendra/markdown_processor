@@ -15,18 +15,12 @@ body {
 
 }
 
-@media screen and (max-width: 750px) {
-    .page {
-
+@media print {
+    @page {
+        margin: 20px;
+        size: A4 portrait;
     }
 }
-
-@media screen and (min-width: 751px) {
-    .page {
-
-    }
-}
-
 
 /* ----- PARAGRAPH ----- */
 .paragraph {

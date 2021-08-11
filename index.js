@@ -39,9 +39,11 @@ program
         '--custom-theme <custom theme path>',
         'Path to the custom theme file'
     )
-    .option(
-        '--page',
-        'Select this option to have a page format.'
+    .addOption(new program.Option(
+        '-o, --output <output>',
+        'Output format')
+        .choices(['html', 'pdf'])
+        .default('html')
     )
     .option(
         '--folder <folder>',

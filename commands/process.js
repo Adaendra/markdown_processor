@@ -1,17 +1,20 @@
 const conf = new (require('conf'))()
 const chalk = require('chalk')
-
-
-var fs = require('fs')
-
+const fs = require('fs')
+const childProcess = require('child_process');
 
 let htmlProcessor = require("../lib/index").htmlGenerator;
 
-function process (options) {
+
+async function process (options) {
     if (!options.name) {
         options.name = Date.now()
     }
-    options.name = options.name + '.html'
+    let html_name = options.name + '.html'
+    if (options.output == 'pdf') {
+        html_name = Date.now() + '.html'
+    }
+    const pdf_name = options.name + '.pdf'
 
     if (options.file && options.folder) {
         console.log(chalk.red.bold("Both 'file' and 'folder' parameters can be defined."))
@@ -51,17 +54,33 @@ function process (options) {
             )
             htmlProcessor.generateHtmlFile(
                 options.titre,
-                options.destination + options.name,
+                options.destination + html_name,
                 datas,
                 options.theme,
                 options.customTheme,
-                options.page,
-                options.folder
+                options.output == 'pdf'
             )
 
             console.log(chalk.blue.bold('Generated file with success :: ' + options.destination + options.name))
+
+            if (options.output == 'pdf') {
+                await sh('pagedjs-cli ' + options.destination + html_name + ' -o ' + options.destination + pdf_name);
+                fs.unlinkSync(options.destination + html_name)
+            }
         }
     }
+}
+
+async function sh(cmd) {
+    return new Promise(function (resolve, reject) {
+        childProcess.exec(cmd, (err, stdout, stderr) => {
+            if (err) {
+                reject(err);
+            } else {
+                resolve({ stdout, stderr });
+            }
+        });
+    });
 }
 
 function getFilesFromFolder(folder) {

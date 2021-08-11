@@ -43,29 +43,18 @@ body {
     bottom: 1em;
 }
 
-@media screen and (max-width: 750px) {
-    .page {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 751px) {
-    .page {
-        width: 60%;
-        margin-left: 20%;
-    }
-}
-
 @media print {
     @page {
-        margin: 0
+        bleed: 6mm;
+        margin: 20px;
+        size: A4 portrait;
+        min-height:100%;
     }
 }
 
 /* ----- PARAGRAPH ----- */
 .paragraph {
     width : 100%;
-    overflow: hidden;
     margin-top: 8px;
     margin-bottom: 8px;
     text-align: justify;
@@ -226,7 +215,7 @@ dd {
 
 /* ----- IMAGE ----- */
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 figure {

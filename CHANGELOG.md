@@ -12,6 +12,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Documentation
 - Code comments
+- Process operation 
+    - Remove **page** option
+    - Add **output** option to generate PDF [#6]
+- CSS correction [#13]
 
 ## [0.3.0] - 2021-08-08
 ### Added

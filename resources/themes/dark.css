@@ -37,16 +37,12 @@ body {
     padding-right: 20px;
 }
 
-@media screen and (max-width: 750px) {
-    .page {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 751px) {
-    .page {
-        width: 60%;
-        margin-left: 20%;
+@media print {
+    @page {
+        bleed: 6mm;
+        margin: 20px;
+        size: A4 portrait;
+        min-height:100%;
     }
 }
 
