@@ -6,7 +6,7 @@ Project to make personalized **HTML** or **pdf** files from **Markdown** files.
 
 *Examples*
 ```
-# Process the TEST.md process
+# Process the TEST.md process (by default it will be an HTML file)
 md-processor process -f "TEST.md"
 
 # Process multiple files
@@ -14,6 +14,9 @@ md-processor process -f "TEST.md" -f "TEST2.md"
 
 # Use a specific theme
 md-processor process -f "TEST.md" -t "rpg"
+
+# Create a pdf file
+md-processor process -f "TEST.md" -t "rpg" -o pdf
 ```
 
 ## Prerequisite
