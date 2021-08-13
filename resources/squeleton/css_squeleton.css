@@ -158,3 +158,43 @@ pre {
 code {
 
 }
+
+
+/* ----- TABLE OF CONTENT ----- */
+#toc a::after{
+    content: target-counter(attr(href), page);
+    float: right;
+}
+
+#toc {
+
+}
+
+#toc a {
+
+}
+
+.toc_element_1 {
+
+}
+
+.toc_element_2 {
+
+}
+
+.toc_element_3 {
+
+}
+
+.toc_element_4 {
+
+}
+
+.toc_element_5 {
+
+}
+
+.toc_element_6 {
+
+}
+
