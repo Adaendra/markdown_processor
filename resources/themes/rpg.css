@@ -69,6 +69,21 @@ body {
         min-height:100%;
     }
 
+    @page:left {
+        @bottom-right {
+            content: counter(page);
+            color: rgba(var(--brown), 0.6);
+            font-family: 'Cinzel', serif;
+        }
+    }
+    @page:right {
+        @bottom-left {
+            content: counter(page);
+            color: rgba(var(--brown), 0.6);
+            font-family: 'Cinzel', serif;
+        }
+    }
+
 }
 
 /* ----- PARAGRAPH ----- */

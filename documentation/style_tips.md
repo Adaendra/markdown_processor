@@ -9,6 +9,23 @@ columns: 2;
 
 ---
 
+## Footer
+To have counter at the bottom of your page.
+```css
+@page:left {
+    @bottom-right {
+        content: counter(page);
+    }
+}
+@page:right {
+    @bottom-left {
+        content: counter(page);
+    }
+}
+```
+
+---
+
 ## Page breaks
 ```css
 /* To have a page break after an element. */
