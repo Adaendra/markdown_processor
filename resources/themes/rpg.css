@@ -1,13 +1,19 @@
 /* ----- IMPORTS ----- */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @font-face {
     font-family: "Solbera Imitation";
     src:
-        local("Solbera Imitation"),
         url("./resources/fonts/Solbera Imitation.otf"),
         url("https://raw.githubusercontent.com/jonathonf/solbera-dnd-fonts/master/Solbera%20Imitation/Solbera%20Imitation.otf") format("opentype");
 }
+@font-face {
+    font-family: "Cinzel";
+    src: url("./resources/fonts/Cinzel-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Hahmlet";
+    src: url("./resources/fonts/Hahmlet-Regular.ttf") format("truetype");
+}
+
 
 /* ----- COLOR ----- */
 :root {
@@ -33,8 +39,6 @@ body {
     font-family: 'Hahmlet', sans-serif;
     font-size: 14px;
     background-color: rgba(var(--old-paper));
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
 }
 
 .page {
@@ -45,11 +49,12 @@ body {
 
 @media print {
     @page {
-        bleed: 6mm;
         margin: 20px;
+        /*bleed: 6mm;
         size: A4 portrait;
-        min-height:100%;
+        min-height:100%;*/
     }
+
 }
 
 /* ----- PARAGRAPH ----- */
@@ -85,6 +90,7 @@ h1 {
     margin-top: 12px;
     font-family: 'Cinzel', serif;
     color: rgba(var(--brown), 1);
+    text-transform: uppercase;
 }
 h2 {
     font-size: 2.0em;
@@ -226,4 +232,56 @@ figure {
 /* ----- LIST ----- */
 ul {
     margin: 0px;
+}
+
+
+/* ----- TABLE OF CONTENT ----- */
+#toc a::after{
+    content: target-counter(attr(href), page);
+    float: right;
+    text-decoration: none;
+    color: #000000;
+}
+
+#toc {
+    page-break-after: always;
+    list-style: none;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+#toc a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.toc_element_1 {
+
+}
+
+.toc_element_2 {
+    margin-left: 16px;
+
+}
+
+.toc_element_3 {
+    margin-left: 32px;
+
+}
+
+.toc_element_4 {
+    margin-left: 48px;
+    font-size: 0.9em;
+}
+
+.toc_element_5 {
+    margin-left: 64px;
+    font-size: 0.9em;
+}
+
+.toc_element_6 {
+    margin-left: 80px;
+    font-size: 0.9em;
+    font-style: italic;
 }

@@ -32,6 +32,11 @@ md-processor process -f "TEST.md" -t "rpg" -o pdf
 - default
 - rpg
 
+### Custom theme
+If you are not interested about one of these theme, you can generate a theme squeleton and use your own theme!
+
+> If you are using a custom theme, you must have all the fonts locally.
+
 <br/>
 
 ---

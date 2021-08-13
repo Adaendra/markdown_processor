@@ -1,5 +1,8 @@
 /* ----- IMPORTS ----- */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@font-face {
+    font-family: "Roboto";
+    src: url("./resources/fonts/Roboto-Regular.ttf") format("truetype");
+}
 
 /* ----- COLOR ----- */
 :root {
@@ -43,6 +46,10 @@ body {
         margin: 20px;
         size: A4 portrait;
         min-height:100%;
+    }
+
+    .page{
+        background-color: transparent;
     }
 }
 
@@ -209,4 +216,56 @@ a:hover {
 /* selected link */
 a:active {
     color: rgba(var(--orange), 0.8);
+}
+
+
+/* ----- TABLE OF CONTENT ----- */
+#toc a::after{
+    content: target-counter(attr(href), page);
+    float: right;
+    text-decoration: none;
+    color: rgba(var(--grey-lighter), 0.9);
+}
+
+#toc {
+    page-break-after: always;
+    list-style: none;
+    color: rgba(var(--grey-lighter), 0.9);
+    margin: 0;
+    padding: 0;
+}
+
+#toc a {
+    text-decoration: none;
+    color: rgba(var(--grey-lighter), 0.9);
+}
+
+.toc_element_1 {
+
+}
+
+.toc_element_2 {
+    margin-left: 16px;
+
+}
+
+.toc_element_3 {
+    margin-left: 32px;
+
+}
+
+.toc_element_4 {
+    margin-left: 48px;
+    font-size: 0.9em;
+}
+
+.toc_element_5 {
+    margin-left: 64px;
+    font-size: 0.9em;
+}
+
+.toc_element_6 {
+    margin-left: 80px;
+    font-size: 0.9em;
+    font-style: italic;
 }
