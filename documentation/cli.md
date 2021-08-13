@@ -21,9 +21,24 @@ Process a file to transform Markdown file.
 |--folder <folder>|Path to the folder with all the MarkDown files to process.|*/*|*/*|no|
 |--table|To add a table of content. Select which levels of title must be added in. Formats: '[1-6]' or '[1-6]-[1-6]'|*/*|1-6|no|
 
+#### examples
+```
+# Process the TEST.md process (by default it will be an HTML file)
+md-processor process -f "TEST.md"
+
+# Process multiple files
+md-processor process -f "TEST.md" -f "TEST2.md"
+
+# Use a specific theme
+md-processor process -f "TEST.md" -t "rpg"
+
+# Create a pdf file
+md-processor process -f "TEST.md" -t "rpg" -o pdf
+```
+
 #### Notes
 ##### Multiple files
-If you are listing multiple file to process, they will be added in the same order than listed in the command.
+If you are listing multiple file to process, they will be added in the same order that you've listed in the command.
 
 ---
 
@@ -34,4 +49,17 @@ Generate a css squeleton to create a custom theme or clone an existing theme.
 |Name|Description|Choices|Default|Required|
 |---|---|---|---|---|
 |-n, --name <file_name_destination>|Name of the generated file. If not defined, the name will be the current timestamp.|*/*|*/*|no|
-|--theme <css_theme>|CSS Theme to copy|- default<br/>- rpg|*/*|no|
+|--theme <css_theme>|CSS Theme to copy|- dark<br/>- default<br/>- rpg|*/*|no|
+
+#### Examples
+```
+# Generate locally a CSS Squeleton with a timestamped name
+md-processor generate_squeleton
+
+# Generate locally a CSS Squeleton with the name you've decided
+md-processor generate_squeleton -n my_custom_theme
+
+# Copy the CSS of an existing theme
+md-processor generate_squeleton --theme rpg
+```
+

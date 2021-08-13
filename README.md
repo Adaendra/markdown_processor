@@ -19,11 +19,36 @@ md-processor process -f "TEST.md" -t "rpg"
 md-processor process -f "TEST.md" -t "rpg" -o pdf
 ```
 
+For more informations about the available commands : [CLI documentation](./documentation/cli.md)
+
+<br/>
+
+---
+
+<br/>
+
+## To install
+The CLI is available on [npm](https://www.npmjs.com/package/markdown-processor).
+
+```bash
+npm i markdown-processor
+```
+
+<br/>
+
+---
+
+<br/>
+
 ## Prerequisite
 > **You must have pagedjs and pagedjs cli installed to generate pdf files.**
 > ```
 > npm install -g pagedjs-cli pagedjs
 > ```
+
+<br/>
+
+---
 
 <br/>
 
@@ -36,6 +61,18 @@ md-processor process -f "TEST.md" -t "rpg" -o pdf
 If you are not interested about one of these theme, you can generate a theme squeleton and use your own theme!
 
 > If you are using a custom theme, you must have all the fonts locally.
+
+*Examples*
+```
+# Generate locally a CSS Squeleton with a timestamped name
+md-processor generate_squeleton
+
+# Generate locally a CSS Squeleton with the name you've decided
+md-processor generate_squeleton -n my_custom_theme
+
+# Copy the CSS of an existing theme
+md-processor generate_squeleton --theme rpg
+```
 
 <br/>
 
