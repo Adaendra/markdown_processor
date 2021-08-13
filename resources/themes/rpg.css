@@ -10,8 +10,18 @@
     src: url("./resources/fonts/Cinzel-Regular.ttf") format("truetype");
 }
 @font-face {
+    font-family: "CinzelDecorative";
+    src: url("./resources/fonts/CinzelDecorative-Bold.ttf") format("truetype");
+}
+@font-face {
     font-family: "Hahmlet";
     src: url("./resources/fonts/Hahmlet-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "Nodesto Caps Condensed";
+    src: url("./resources/fonts/Nodesto Caps Condensed Bold.otf") format("opentype");
+    font-weight: bold;
+    font-style: italic;
 }
 
 
@@ -45,14 +55,18 @@ body {
     overflow-x: hidden;
     background-color: rgba(var(--old-paper));
     bottom: 1em;
+    columns: 2;
+    -webkit-column-fill: auto;
+    -moz-column-fill: auto;
+    column-fill: auto;
 }
 
 @media print {
     @page {
         margin: 20px;
-        /*bleed: 6mm;
+        bleed: 6mm;
         size: A4 portrait;
-        min-height:100%;*/
+        min-height:100%;
     }
 
 }
@@ -84,16 +98,16 @@ p:first-of-type::first-letter {
 
 /* ----- TITLES ----- */
 h1 {
-    font-size: 2.2em;
-    font-weight: 900;
+    font-size: 2.8em;
     margin-bottom: 20px;
     margin-top: 12px;
-    font-family: 'Cinzel', serif;
+    font-family: "Nodesto Caps Condensed";
     color: rgba(var(--brown), 1);
     text-transform: uppercase;
+    page-break-before: always;
 }
 h2 {
-    font-size: 2.0em;
+    font-size: 1.8em;
     font-weight: 800;
     margin-bottom: 16px;
     margin-top: 12px;
@@ -101,7 +115,7 @@ h2 {
     color: rgba(var(--brown), 1);
 }
 h3 {
-    font-size: 1.8em;
+    font-size: 1.6em;
     font-weight: 700;
     margin-bottom: 12px;
     margin-top: 8px;
@@ -111,7 +125,7 @@ h3 {
     width: 100%;
 }
 h4 {
-    font-size: 1.6em;
+    font-size: 1.4em;
     font-weight: 600;
     margin-bottom: 8px;
     margin-top: 8px;
@@ -119,7 +133,7 @@ h4 {
     color: rgba(var(--brown), 1);
 }
 h5 {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: 500;
     margin-bottom: 4px;
     margin-top: 4px;
@@ -127,7 +141,7 @@ h5 {
     color: rgba(var(--brown), 1);
 }
 h6 {
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 400;
     font-style: italic;
     margin-bottom: 4px;

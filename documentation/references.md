@@ -3,6 +3,11 @@
 This part documents all the elements which are used and come from Open Source/Free Projects and Initiatives.
 
 ## Fonts
+- [Cinzel](https://fonts.google.com/specimen/Cinzel)
+- [Cinzel Decorative](https://fonts.google.com/specimen/Cinzel+Decorative)
+- [Hahmlet](https://fonts.google.com/specimen/Hahmlet)
+- [Nodesto Caps Condensed](https://github.com/jonathonf/solbera-dnd-fonts)
+- [Roboto](https://fonts.google.com/specimen/Roboto)
 - [Solbera Imitation](https://github.com/jonathonf/solbera-dnd-fonts)
 
 ---
