@@ -4,7 +4,7 @@ const { program } = require('commander')
 const process = require('./commands/process')
 const generate_squeleton = require('./commands/generate_squeleton')
 
-program.version("0.1.0")
+program.version("0.5.0")
 
 program.showHelpAfterError('(add --help for additional information)');
 
@@ -48,6 +48,10 @@ program
     .option(
         '--folder <folder>',
         'Path to the folder with all the MarkDown files to process.'
+    )
+    .option(
+        '--table <toc_levels>',
+        'To add a table of content. Select which levels of title must be added in. Formats: \'[1-6]\' or \'[1-6]-[1-6]\''
     )
     .action(process)
 

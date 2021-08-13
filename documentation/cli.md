@@ -19,6 +19,7 @@ Process a file to transform Markdown file.
 |**--custom-theme <custom theme path>**|Path to the custom theme file|*/*|*/*|no|
 |**-o, --output <output>**|Output format|- html <br/>- pdf|html|no|
 |--folder <folder>|Path to the folder with all the MarkDown files to process.|*/*|*/*|no|
+|--table|To add a table of content. Select which levels of title must be added in. Formats: '[1-6]' or '[1-6]-[1-6]'|*/*|1-6|no|
 
 #### Notes
 ##### Multiple files

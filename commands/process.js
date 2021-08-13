@@ -28,6 +28,21 @@ async function process (options) {
             throw "One of 'file' and 'folder' parameters must be defined."
         }
 
+        if (options.table && !options.table.match(/^([1-6]|[1-6]-[1-6])$/gm)) {
+            throw "Table parameter must match one of the next format : '[1-6]' or '[1-6]-[1-6]' ex: 2, 1-4"
+        } else if (options.table) {
+            if (options.table.length == 1) {
+                options.table = options.table + "-" + options.table
+            }
+
+            toc_levels = options.table.split('-')
+
+            if (toc_levels[0] > toc_levels[1]) {
+                throw "First table of content parameter must be lower or equal than the second"
+            }
+        }
+
+
         // Retrieve all the files if it was a folder in input.
         if (options.folder) {
             options.file = file_utils.getMarkdownFilesFromFolder(options.folder)
@@ -64,9 +79,8 @@ async function process (options) {
             options.titre,
             options.destination + html_name,
             datas,
-            options.theme,
-            options.customTheme,
-            options.output == 'pdf'
+            options.output == 'pdf',
+            options
         )
 
 
