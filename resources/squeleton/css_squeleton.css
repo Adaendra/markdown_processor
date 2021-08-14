@@ -15,6 +15,10 @@ body {
 
 }
 
+#md_content {
+
+}
+
 @media print {
     @page {
         margin: 20px;

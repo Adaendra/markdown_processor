@@ -49,16 +49,17 @@ body {
     font-family: 'Hahmlet', sans-serif;
     font-size: 14px;
     background-color: rgba(var(--old-paper));
+    overflow-x: hidden;
 }
 
 .page {
     overflow-x: hidden;
     background-color: rgba(var(--old-paper));
     bottom: 1em;
+}
+
+#md_content {
     columns: 2;
-    -webkit-column-fill: auto;
-    -moz-column-fill: auto;
-    column-fill: auto;
 }
 
 @media print {
@@ -273,7 +274,7 @@ ul {
 }
 
 #toc {
-    page-break-after: always;
+    page-break-after: auto;
     list-style: none;
     color: #000000;
     margin: 0;
