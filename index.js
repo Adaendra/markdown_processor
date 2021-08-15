@@ -3,8 +3,9 @@
 const { program } = require('commander')
 const process = require('./commands/process')
 const generate_squeleton = require('./commands/generate_squeleton')
+var package_json = require('./package.json');
 
-program.version("0.6.0")
+program.version(package_json.version)
 
 program.showHelpAfterError('(add --help for additional information)');
 
