@@ -4,7 +4,7 @@ const { program } = require('commander')
 const process = require('./commands/process')
 const generate_squeleton = require('./commands/generate_squeleton')
 
-program.version("0.5.0")
+program.version("0.6.0")
 
 program.showHelpAfterError('(add --help for additional information)');
 
