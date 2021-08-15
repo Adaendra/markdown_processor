@@ -6,8 +6,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Changed
-- Update documentation [#22]
-- Update **rpg** theme [#20]
+- Update documentation [#22] [#19]
+- Update **rpg** theme [#20] [#19]
 
 ---
 

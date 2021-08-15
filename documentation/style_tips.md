@@ -26,6 +26,34 @@ To have counter at the bottom of your page.
 
 ---
 
+## Full page image
+First, declare your image with a specific class
+```markdown
+![Image {"class":"full-page page-break-after"}](https://pbs.twimg.com/media/EcrQxjsX0AQJoXD?format=jpg&name=large)
+```
+
+Then declare the class to have the image in full page
+```css
+.full-page img{
+    float:top;
+    float-reference: page;
+    position: absolute;
+    top: -20px; /* margin top of the page */
+    left: -20px; /* left margin of the page */
+    width: calc(100% + 40px);
+    height: calc(100% + 44px);
+    page-break-before: always;
+}
+
+.page-break-after {
+    page-break-after: always;
+}
+```
+
+You may declare the "page-break-after", only on the last element of each full page list elements that follow.
+
+---
+
 ## Page breaks
 ```css
 /* To have a page break after an element. */

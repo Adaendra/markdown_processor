@@ -59,13 +59,13 @@ body {
 }
 
 #md_content {
-    columns: 2;
+    columns: 1;
 }
 
 @media print {
     @page {
         margin: 20px;
-        bleed: 6mm;
+        margin-bottom: 24px;
         size: A4 portrait;
         min-height:100%;
     }
@@ -83,6 +83,31 @@ body {
             color: rgba(var(--brown), 0.6);
             font-family: 'Cinzel', serif;
         }
+    }
+
+    .full-page img{
+        float:top;
+        float-reference: page;
+        position: absolute;
+        top: -20px; /* margin top of the page */
+        left: -20px; /* left margin of the page */
+        width: calc(100% + 40px);
+        height: calc(100% + 44px);
+        page-break-before: always;
+        max-width: unset !important;
+    }
+
+    .full-page figcaption {
+        position: absolute;
+        bottom: -24px;
+        padding-bottom: 16px;
+        color: white;
+        width: 100%;
+        text-align: center;
+    }
+
+    .page-break-after {
+        page-break-after: always;
     }
 
 }

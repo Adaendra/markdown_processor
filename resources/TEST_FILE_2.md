@@ -9,7 +9,11 @@
 
 Proin venenatis porta lectus, a molestie enim hendrerit sed. Curabitur eleifend id urna quis eleifend. Nunc ac nisi accumsan, volutpat dui et, convallis magna. Phasellus ornare urna mattis ornare pretium. Morbi elit ante, aliquet eu blandit a, sodales sit amet justo. Nulla facilisi. Nulla suscipit enim enim, vitae imperdiet lorem consectetur quis. Sed in velit purus. Aliquam sem dolor, eleifend ut justo a, pharetra sagittis nunc. Nam vitae sem mollis, efficitur justo in, bibendum leo. Cras vel ultricies nulla. Aliquam ut placerat ante. Pellentesque blandit aliquet sem quis aliquet. Phasellus vitae eros tempor, lacinia nisi in, vulputate ligula. Etiam erat augue, imperdiet eget lobortis nec, pretium laoreet quam. Vivamus venenatis dignissim pharetra.
 
-# Test
+![Image {"class":"full-page"}](https://pbs.twimg.com/media/EcrQxjsX0AQJoXD?format=jpg&name=large)
+
+![Image {"showLegend":true, "class":"full-page page-break-after"}](https://pbs.twimg.com/media/EcrQxjsX0AQJoXD?format=jpg&name=large)
+
+## Test
 ## AAA
 Nam nec tellus rhoncus, maximus eros non, maximus lectus. Nam ac tempus tellus. Vestibulum auctor faucibus interdum. Vestibulum non orci at mi volutpat maximus non ac ipsum. Morbi non lorem libero. Duis neque nisi, tempor a metus quis, eleifend dictum sapien. Duis diam orci, fringilla ac tellus quis, mattis sagittis nibh. Nam congue tempus nunc ac cursus. Vivamus molestie dignissim risus, vel rutrum risus finibus dapibus. Etiam sit amet pretium mauris, ut blandit ante. Sed convallis, lorem non condimentum pulvinar, nisi urna pretium augue, vitae hendrerit augue massa et lacus.
 
