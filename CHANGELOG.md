@@ -7,9 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 ### Added
 - Image option to have a link in the table of content. [#23]
+- Multiple levels of Horizontal Rule [#26]
 
 ### Changed
 - Update CLI **version** command 
+- Themes:
+    - dark
+    - default
+    - rpg
+- Documentation
 
 ---
 

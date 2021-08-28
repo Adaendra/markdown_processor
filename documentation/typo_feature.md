@@ -58,10 +58,23 @@
 <br/>
 
 ## Horizontal rule
+### Small
 ```markdown
 ---
 ```
-![horizontal rule example](./typo_feature/horizontal_rule.PNG)
+![small horizontal rule example](./typo_feature/horizontal_rule_small.PNG)
+
+### Medium
+```markdown
+----
+```
+![medium horizontal rule example](./typo_feature/horizontal_rule_medium.PNG)
+
+### Large
+```markdown
+-----
+```
+![large horizontal rule example](./typo_feature/horizontal_rule_large.PNG)
 
 ---
 

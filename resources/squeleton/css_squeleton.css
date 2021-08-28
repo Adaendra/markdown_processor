@@ -86,7 +86,13 @@ figure > figcaption {
 }
 
 /* ----- HORIZONTAL RULE ----- */
-.horizontal_rule {
+.small_horizontal_rule {
+
+}
+.medium_horizontal_rule {
+
+}
+.large_horizontal_rule {
 
 }
 
