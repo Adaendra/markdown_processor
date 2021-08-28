@@ -85,15 +85,18 @@ body {
         }
     }
 
+    .full-page {
+        page-break-before: always;
+    }
+
     .full-page img{
         float:top;
-        float-reference: page;
         position: absolute;
         top: -20px; /* margin top of the page */
         left: -20px; /* left margin of the page */
         width: calc(100% + 40px);
         height: calc(100% + 44px);
-        page-break-before: always;
+        float-reference: page;
         max-width: unset !important;
     }
 

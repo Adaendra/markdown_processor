@@ -51,7 +51,7 @@ program
         'Path to the folder with all the MarkDown files to process.'
     )
     .option(
-        '--table <toc_levels>',
+        '--table <table of content levels>',
         'To add a table of content. Select which levels of title must be added in. Formats: \'[1-6]\' or \'[1-6]-[1-6]\''
     )
     .action(process)

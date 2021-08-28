@@ -11,7 +11,7 @@ Proin venenatis porta lectus, a molestie enim hendrerit sed. Curabitur eleifend 
 
 ![Image {"class":"full-page"}](https://pbs.twimg.com/media/EcrQxjsX0AQJoXD?format=jpg&name=large)
 
-![Image {"showLegend":true, "class":"full-page page-break-after"}](https://pbs.twimg.com/media/EcrQxjsX0AQJoXD?format=jpg&name=large)
+![Image avec un titre {"showLegend":true, "class":"full-page page-break-after", "table_of_content":5}](https://pbs.twimg.com/media/EcrQxjsX0AQJoXD?format=jpg&name=large)
 
 ## Test
 ## AAA
