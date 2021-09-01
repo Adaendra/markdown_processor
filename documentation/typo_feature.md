@@ -58,10 +58,23 @@
 <br/>
 
 ## Horizontal rule
+### Small
 ```markdown
 ---
 ```
-![horizontal rule example](./typo_feature/horizontal_rule.PNG)
+![small horizontal rule example](./typo_feature/horizontal_rule_small.PNG)
+
+### Medium
+```markdown
+----
+```
+![medium horizontal rule example](./typo_feature/horizontal_rule_medium.PNG)
+
+### Large
+```markdown
+-----
+```
+![large horizontal rule example](./typo_feature/horizontal_rule_large.PNG)
 
 ---
 
@@ -113,11 +126,24 @@
 ```
 ![image example](./typo_feature/image.PNG)
 
-### Legend
+### Options
+In a JSON Object, you can override the following options:
+
+|Name|Type|Example|Description|
+|---|---|---|---|
+|showLegend|boolean|true|Boolean to know if you want to show or hide the legend of the image|
+|width|string|80px|To define the width of the image|
+|height|string|90px|To define the height of the image|
+|class|string|css_class|Define which CSS style class must be added to your image|
+|table_of_content|integer|1|Between 1 to 6. Define the title level to your image in the table of content. The title use will be the legend.|
+
+*example*
 ```markdown
 ![Image {"showLegend":true}](https://pbs.twimg.com/media/EcrQxjsX0AQJoXD?format=jpg&name=large)
 ```
 ![image legend example](./typo_feature/image_legend.PNG)
+
+
 
 ---
 

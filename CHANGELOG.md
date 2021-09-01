@@ -8,6 +8,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.7.0] - 2021-09-01
+### Added
+- Image option to have a link in the table of content. [#23]
+- Multiple levels of Horizontal Rule [#26]
+- **process** option to use an option file to manage all the options [#18]
+
+### Changed
+- Update CLI **version** command 
+- Themes:
+    - dark
+    - default
+    - rpg
+- Documentation
+
+---
+
 ## [0.6.0] - 2021-08-15
 ### Changed
 - Update documentation [#22] [#19]

@@ -7,11 +7,21 @@
 
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus sapien lorem, at blandit leo imperdiet eget. Vivamus interdum eget risus quis tincidunt. Sed arcu ex, ullamcorper at mauris ac, pulvinar tempus magna. Ut nec justo molestie ipsum eleifend finibus. Pellentesque id lacus purus. Phasellus condimentum diam ac magna gravida varius. Donec id sollicitudin elit, id ullamcorper lacus.
 
-Proin venenatis porta lectus, a molestie enim hendrerit sed. Curabitur eleifend id urna quis eleifend. Nunc ac nisi accumsan, volutpat dui et, convallis magna. Phasellus ornare urna mattis ornare pretium. Morbi elit ante, aliquet eu blandit a, sodales sit amet justo. Nulla facilisi. Nulla suscipit enim enim, vitae imperdiet lorem consectetur quis. Sed in velit purus. Aliquam sem dolor, eleifend ut justo a, pharetra sagittis nunc. Nam vitae sem mollis, efficitur justo in, bibendum leo. Cras vel ultricies nulla. Aliquam ut placerat ante. Pellentesque blandit aliquet sem quis aliquet. Phasellus vitae eros tempor, lacinia nisi in, vulputate ligula. Etiam erat augue, imperdiet eget lobortis nec, pretium laoreet quam. Vivamus venenatis dignissim pharetra.
+---
+
+Proin venenatis porta lectus, a molestie enim hendrerit sed. Curabitur eleifend id urna quis eleifend. Nunc ac nisi accumsan, volutpat dui et, convallis magna. Phasellus ornare urna mattis ornare pretium. Morbi elit ante, aliquet eu blandit a, sodales sit amet justo. Nulla facilisi. Nulla suscipit enim enim, vitae imperdiet lorem consectetur quis. Sed in velit purus. Aliquam sem dolor, eleifend ut justo a, pharetra sagittis nunc. 
+
+----
+
+Nam vitae sem mollis, efficitur justo in, bibendum leo. Cras vel ultricies nulla. Aliquam ut placerat ante. Pellentesque blandit aliquet sem quis aliquet. 
+
+-----
+
+Phasellus vitae eros tempor, lacinia nisi in, vulputate ligula. Etiam erat augue, imperdiet eget lobortis nec, pretium laoreet quam. Vivamus venenatis dignissim pharetra.
 
 ![Image {"class":"full-page"}](https://pbs.twimg.com/media/EcrQxjsX0AQJoXD?format=jpg&name=large)
 
-![Image {"showLegend":true, "class":"full-page page-break-after"}](https://pbs.twimg.com/media/EcrQxjsX0AQJoXD?format=jpg&name=large)
+![Image avec un titre {"showLegend":true, "class":"full-page page-break-after", "table_of_content":5}](https://pbs.twimg.com/media/EcrQxjsX0AQJoXD?format=jpg&name=large)
 
 ## Test
 ## AAA

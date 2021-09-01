@@ -3,8 +3,9 @@
 const { program } = require('commander')
 const process = require('./commands/process')
 const generate_squeleton = require('./commands/generate_squeleton')
+var package_json = require('./package.json');
 
-program.version("0.6.0")
+program.version(package_json.version)
 
 program.showHelpAfterError('(add --help for additional information)');
 
@@ -50,8 +51,12 @@ program
         'Path to the folder with all the MarkDown files to process.'
     )
     .option(
-        '--table <toc_levels>',
+        '--table <table of content levels>',
         'To add a table of content. Select which levels of title must be added in. Formats: \'[1-6]\' or \'[1-6]-[1-6]\''
+    )
+    .option(
+        '--option-file <path to option file>',
+        'Use a JSON option file to use the CLI easily.'
     )
     .action(process)
 

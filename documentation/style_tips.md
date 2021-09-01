@@ -90,3 +90,16 @@ The list of all the margin boxes where you can add elements.
 @bottom-right {...}
 @bottom-right-corner {...}
 ```
+
+---
+
+## Background Image for a PDF file
+For **@page**, define your background-image and your background size and let the magic work!
+```css
+@media print {
+    @page {
+        background-image:url('./resources/PHB-background-costal.png');
+        background-size: 100% 100%;
+    }
+}
+```
