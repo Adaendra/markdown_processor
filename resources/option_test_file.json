@@ -1,0 +1,10 @@
+{
+  "name": "test_pdf_file",
+  "file" : [
+    "./resources/TEST_FILE.md",
+    "./resources/TEST_FILE_2.md"
+  ],
+  "output": "pdf",
+  "titre": "test titre from options",
+  "theme": "rpg"
+}

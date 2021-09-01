@@ -10,6 +10,47 @@ const file_utils = require("../lib/utils/file_utils")
  */
 async function process (options) {
     try {
+        if (options.optionFile) {
+            let option_file_content = JSON.parse(fs.readFileSync(options.optionFile, 'utf8'));
+
+            if (!options.name && option_file_content.name) {
+                options.name = option_file_content.name
+                console.log('ee')
+            }
+
+            if (!options.file && option_file_content.file) {
+                options.file = option_file_content.file
+            }
+
+            if (!options.folder && option_file_content.folder) {
+                options.folder = option_file_content.folder
+            }
+
+            if (!options.table && option_file_content.table) {
+                options.table = option_file_content.table
+            }
+
+            if (!options.destination && option_file_content.destination) {
+                options.destination = option_file_content.destination
+            }
+
+            if (option_file_content.output) {
+                options.output = option_file_content.output
+            }
+
+            if (!options.titre && option_file_content.titre) {
+                options.titre = option_file_content.titre
+            }
+
+            if (option_file_content.theme) {
+                options.theme = option_file_content.theme
+            }
+
+            if (!options.customTheme && option_file_content.customTheme) {
+                options.customTheme = option_file_content.customTheme
+            }
+        }
+
         // If any name is defined, generate on from timestamp
         if (!options.name) {
             options.name = Date.now()

@@ -54,6 +54,10 @@ program
         '--table <table of content levels>',
         'To add a table of content. Select which levels of title must be added in. Formats: \'[1-6]\' or \'[1-6]-[1-6]\''
     )
+    .option(
+        '--option-file <path to option file>',
+        'Use a JSON option file to use the CLI easily.'
+    )
     .action(process)
 
 
