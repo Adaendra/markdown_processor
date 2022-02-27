@@ -1,8 +1,7 @@
 {
   "name": "test_pdf_file",
   "file" : [
-    "./resources/TEST_FILE.md",
-    "./resources/TEST_FILE_2.md"
+    "./resources/TEST_FILE_DND.md"
   ],
   "output": "pdf",
   "titre": "test titre from options",
