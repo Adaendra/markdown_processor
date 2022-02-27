@@ -19,7 +19,7 @@ md-processor process -f "TEST.md" -t "rpg"
 md-processor process -f "TEST.md" -t "rpg" -o pdf
 ```
 
-For more informations about the available commands : [CLI documentation](./documentation/cli.md)
+For more informations about the available commands : [CLI documentation](documentation/how-to/cli.md)
 
 <br/>
 
@@ -84,12 +84,17 @@ md-processor generate_squeleton --theme rpg
 Links to the detailed documentation of the project.
 
 ### Usage
-- [CLI](./documentation/cli.md)
-- [Typo feature](./documentation/typo_feature.md)
+- [CLI](documentation/how-to/cli.md)
+- [Typo feature](documentation/how-to/typo_feature.md)
 
 ### Development
-- [Development docs](./documentation/development.md)
-- [Technologies/Tool used](./documentation/references.md)
-- [Unit Testing](./documentation/unit_testing.md)
+- [Development docs](documentation/dev/development.md)
+- [Technologies/Tool used](documentation/dev/references.md)
+- [Unit Testing](documentation/dev/unit_testing.md)
 
+---
 
+## Thanks
+To make this project working correctly, we are using some policies/libraries... 
+
+First, the complete list is [here](documentation/dev/references.md) and big up to all the people who worked on it!

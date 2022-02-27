@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.0.0] - 2022-02-27
+### Changed
+- Documentation
+
+---
+
 ## [0.7.0] - 2021-09-01
 ### Added
 - Image option to have a link in the table of content. [#23]
