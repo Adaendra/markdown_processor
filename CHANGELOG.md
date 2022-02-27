@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.1.0] - 2022-02-27
+### Added
+- Blockquote D&D Stats bloc
+
+---
+
 ## [1.0.0] - 2022-02-27
 ### Changed
 - Documentation
