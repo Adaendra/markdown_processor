@@ -58,10 +58,6 @@ body {
     bottom: 1em;
 }
 
-#md_content {
-    columns: 1;
-}
-
 @media print {
     @page {
         margin: 20px;
@@ -83,6 +79,13 @@ body {
             color: rgba(var(--brown), 0.6);
             font-family: 'Cinzel', serif;
         }
+    }
+
+    .page{
+        column-count: 2;
+        column-fill: auto;
+        font-size: 0.8em;
+        word-break: break-word;
     }
 
     .full-page {
@@ -112,7 +115,6 @@ body {
     .page-break-after {
         page-break-after: always;
     }
-
 }
 
 /* ----- PARAGRAPH ----- */
@@ -149,6 +151,8 @@ h1 {
     color: rgba(var(--brown), 1);
     text-transform: uppercase;
     page-break-before: always;
+    column-span: all;
+    break-before: page;
 }
 h2 {
     font-size: 1.8em;
@@ -157,6 +161,7 @@ h2 {
     margin-top: 12px;
     font-family: 'Cinzel', serif;
     color: rgba(var(--brown), 1);
+    column-span: all;
 }
 h3 {
     font-size: 1.6em;
@@ -223,12 +228,25 @@ h6 {
     padding: 20px;
     position: relative;
     font-size: 0.8em !important;
-    column-count: 2;
     border-left: none;
     width: calc(100% - 60px);
-    page-break-inside: avoid;
     box-shadow: 5px 0 5px -5px rgba(0,0,0,0.7),
     -5px 0 5px -5px rgba(0,0,0,0.7);
+    break-inside: avoid;
+    page-break-inside: avoid;
+    column-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    -webkit-page-break-inside: avoid;
+    -webkit-break-inside: avoid;
+}
+
+.dnd-creature {
+    column-count: 2;
+    column-span: all;
+    page-break-before: always;
+}
+.dnd-weapon {
+    column-count: 1;
 }
 
 .dnd-stat-bloc:before{
@@ -264,6 +282,8 @@ h6 {
     margin-bottom: 0px;
     margin-top: 0px;
     page-break-before: unset !important;
+    column-span: unset;
+    break-before: unset;
 }
 
 .dnd-stat-bloc h2{
@@ -283,7 +303,7 @@ h6 {
 .dnd-stat-bloc .small_horizontal_rule {
     border-top: solid transparent 2px;
     border-bottom: solid transparent 2px;
-    border-left: solid #A30B2E 320px;
+    border-left: solid #A30B2E 260px;
     border-right: solid transparent 2px;
     margin: 8px 0px;
 }
