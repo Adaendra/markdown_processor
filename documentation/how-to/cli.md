@@ -35,6 +35,9 @@ md-processor process -f "TEST.md" -t "rpg"
 
 # Create a pdf file
 md-processor process -f "TEST.md" -t "rpg" -o pdf
+
+# Use an option-file
+md-processor process --option-file test.json
 ```
 
 #### Notes

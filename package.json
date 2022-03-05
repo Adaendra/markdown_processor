@@ -9,7 +9,8 @@
   },
   "files": [
     "index.js",
-    "lib/"
+    "lib/",
+    "resources/"
   ],
   "keywords": [],
   "author": "",

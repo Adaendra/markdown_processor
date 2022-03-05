@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Changed D&D Stats bloc to have a specific for creatures (multicolumns) and one for weapons (one column).
 - Update RPG Theme
 
+### Fixed
+- CSS and Font import
+
 ---
 
 ## [1.1.0] - 2022-02-27
