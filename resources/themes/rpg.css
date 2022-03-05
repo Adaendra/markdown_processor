@@ -96,6 +96,8 @@ body {
     margin-top: 8px;
     margin-bottom: 8px;
     text-align: justify;
+    page-break-inside: avoid;
+    break-inside: avoid;
 }
 
 p {
@@ -174,7 +176,7 @@ h6 {
 
 /* ----- BLOCKQUOTE ----- */
 .blockquote {
-    width: 100%;
+    width: calc(100% - 30px);
     border-left: solid rgba(var(--grey-dark), 0.7) 4px;
     padding: 4px 8px;
     margin: 8px 4px;
