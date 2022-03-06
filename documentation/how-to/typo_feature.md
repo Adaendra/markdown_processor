@@ -270,3 +270,14 @@ The following example is done with the rpg theme.
 > **Smashing Pumpkin** *[1 action]* Throw or smash the pumpkins it can have in its hands. 
 ```
 ![blockquote_dnd_stats_bloc example](./typo_feature/blockquote_dnd_stats_bloc.PNG)
+
+---
+
+<br/>
+
+## Page Break
+To add a page break whenever you want.
+
+```markdown
+{% page_break %}
+```
