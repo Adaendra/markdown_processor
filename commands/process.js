@@ -15,15 +15,14 @@ async function process (options) {
 
             if (!options.name && option_file_content.name) {
                 options.name = option_file_content.name
-                console.log('ee')
             }
 
             if (!options.file && option_file_content.file) {
                 options.file = option_file_content.file
             }
 
-            if (!options.folder && option_file_content.folder) {
-                options.folder = option_file_content.folder
+            if (!options.folders && option_file_content.folders) {
+                options.folders = option_file_content.folders
             }
 
             if (!options.table && option_file_content.table) {
@@ -62,10 +61,10 @@ async function process (options) {
         }
 
         // Return error if we have folder and files or none of them.
-        if (options.file && options.folder) {
+        if (options.file && options.folders) {
             throw "Both 'file' and 'folder' parameters can be defined."
         }
-        if (!options.file && !options.folder) {
+        if (!options.file && !options.folders) {
             throw "One of 'file' and 'folder' parameters must be defined."
         }
 
@@ -85,8 +84,8 @@ async function process (options) {
 
 
         // Retrieve all the files if it was a folder in input.
-        if (options.folder) {
-            options.file = file_utils.getMarkdownFilesFromFolder(options.folder)
+        if (options.folders) {
+            options.file = file_utils.getMarkdownFilesFromFolder(options.folders)
         }
 
         // Show to the terminal the options selected

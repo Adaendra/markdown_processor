@@ -18,7 +18,7 @@ Process a file to transform Markdown file.
 |**--theme <css_theme>**|CSS Theme to use in the generated HTML file|- default<br/>- rpg|default|no|
 |**--custom-theme <custom theme path>**|Path to the custom theme file|*/*|*/*|no|
 |**-o, --output <output>**|Output format|- html <br/>- pdf|html|no|
-|--folder <folder>|Path to the folder with all the MarkDown files to process.|*/*|*/*|no|
+|--folders <folders>|Path to the folders with all the MarkDown files to process.|*/*|*/*|no|
 |--table|To add a table of content. Select which levels of title must be added in. Formats: '[1-6]' or '[1-6]-[1-6]'|*/*|*/*|no|
 |--option-file <option file path>|Use a JSON option file to use the CLI easily.|*/*|*/*|no|
 
@@ -55,7 +55,7 @@ If you are listing multiple file to process, they will be added in the same orde
   "output": "",
   "titre": "",
   "theme": "",
-  "folder": "",
+  "folders": "",
   "destination": "",
   "customTheme": "",
   "table": ""

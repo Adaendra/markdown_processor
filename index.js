@@ -47,8 +47,8 @@ program
         .default('html')
     )
     .option(
-        '--folder <folder>',
-        'Path to the folder with all the MarkDown files to process.'
+        '--folders <folders>',
+        'Path to the folders with all the MarkDown files to process.'
     )
     .option(
         '--table <table of content levels>',
