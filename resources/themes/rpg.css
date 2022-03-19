@@ -95,6 +95,11 @@ body {
     .page-break-after {
         page-break-after: always;
     }
+
+    .dnd-weapon {
+        width: calc(11cm - 60px);
+    }
+
 }
 
 /* ----- PARAGRAPH ----- */
@@ -232,30 +237,6 @@ h6 {
     column-count: 1;
 }
 
-.dnd-stat-bloc:before{
-    background-color: #DB8640;
-    content:"";
-    width: 100%;
-    height: 8px;
-    border: solid black 1px;
-    display: block;
-    position: absolute;
-    padding: 0px 4px;
-    top: 0px;
-    left: -4px;
-}
-.dnd-stat-bloc:after{
-    background-color: #DB8640;
-    content:"";
-    width: 100%;
-    height: 8px;
-    border: solid black 1px;
-    display: block;
-    position: absolute;
-    padding: 0px 4px;
-    bottom: 0px;
-    left: -4px;
-}
 
 .dnd-stat-bloc h1 {
     color: #A30B2E;
@@ -277,6 +258,8 @@ h6 {
     font-size: 1em;
     padding-left: 4px;
     margin-bottom: 4px;
+    column-span: unset;
+    break-before: unset;
 }
 .dnd-stat-bloc h2::first-letter{
     font-weight: bold;
@@ -299,21 +282,23 @@ h6 {
     color: #A30B2E !important;
     width: 100%;
     text-align: center;
-    break-after: column;
+    break-inside: avoid;
     background-color: transparent !important;
 }
 
 .dnd-stat-bloc th {
     background-color: transparent !important;
     color: #A30B2E !important;
-    font-size: 1em !important;
+    font-size: 0.8em !important;
     font-weight: bold !important;
 }
 
 .dnd-stat-bloc tr {
     background-color: transparent !important;
-    font-size: 1em !important;
-    font-size: 0.8em !important;
+}
+
+.dnd-stat-bloc td {
+    font-size: 0.75em !important;
 }
 
 /* ----- FIGURE ----- */
