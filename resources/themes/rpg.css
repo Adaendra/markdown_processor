@@ -28,7 +28,7 @@ body {
 .page {
     overflow-x: hidden;
     background-color: rgba(var(--old-paper));
-    bottom: 1em;
+    bottom: 2em;
 }
 
 @media print {
@@ -55,10 +55,16 @@ body {
     }
 
     .page{
-        column-count: 2;
-        column-fill: auto;
         font-size: 0.8em;
         word-break: break-word;
+    }
+    .paging-manual {
+        height: 29.7cm;
+        column-count: auto;
+    }
+    .paging-auto {
+        column-count: 2;
+        column-fill: auto;
     }
 
     .full-page {

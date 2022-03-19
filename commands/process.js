@@ -48,7 +48,16 @@ async function process (options) {
             if (!options.customTheme && option_file_content.customTheme) {
                 options.customTheme = option_file_content.customTheme
             }
+
+            if (!options.pagingAuto && option_file_content.pagingAuto) {
+                options.pagingAuto = option_file_content.pagingAuto
+            }
         }
+
+        if (options.pagingAuto == undefined) {
+            options.pagingAuto = false;
+        }
+        console.log(options.pagingAuto)
 
         // If any name is defined, generate on from timestamp
         if (!options.name) {
