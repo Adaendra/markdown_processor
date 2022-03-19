@@ -58,10 +58,6 @@ program
         '--option-file <path to option file>',
         'Use a JSON option file to use the CLI easily.'
     )
-    .option(
-        '--paging-auto',
-        'True, to cut content into multiple pages automatically.'
-    )
     .action(process)
 
 

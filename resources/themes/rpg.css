@@ -58,15 +58,9 @@ body {
         font-size: 0.8em;
         word-break: break-word;
         column-fill: auto;
-    }
-    .paging-manual {
         height: 27cm;
         column-count: auto;
         column-width: 9cm;
-    }
-    .paging-auto {
-        column-count: 2;
-        column-fill: auto;
     }
 
     .full-page {
@@ -232,7 +226,7 @@ h6 {
 .dnd-creature {
     column-count: 2;
     column-span: all;
-    page-break-before: always;
+    page-break-before: auto;
 }
 .dnd-weapon {
     column-count: 1;
