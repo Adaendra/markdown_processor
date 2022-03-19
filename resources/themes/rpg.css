@@ -59,8 +59,9 @@ body {
         word-break: break-word;
     }
     .paging-manual {
-        height: 29.7cm;
+        height: 27cm;
         column-count: auto;
+        column-width: 9cm;
     }
     .paging-auto {
         column-count: 2;
@@ -113,7 +114,7 @@ p {
     margin-bottom: 8px;
     text-align: justify;
 }
-
+/*
 p:first-of-type::first-letter {
     -webkit-initial-letter: 4;
     initial-letter: 4;
@@ -122,6 +123,7 @@ p:first-of-type::first-letter {
     color: rgba(var(--brown), 1);
     font-family: "Solbera Imitation";
 }
+*/
 
 /* ----- TITLES ----- */
 h1 {
