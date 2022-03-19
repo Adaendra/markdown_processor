@@ -57,6 +57,7 @@ body {
     .page{
         font-size: 0.8em;
         word-break: break-word;
+        column-fill: auto;
     }
     .paging-manual {
         height: 27cm;
