@@ -16,7 +16,7 @@ md-processor process -f "TEST.md" -f "TEST2.md"
 md-processor process -f "TEST.md" -t "rpg"
 
 # Create a pdf file
-md-processor process -f "TEST.md" -t "rpg" -o pdf
+md-processor process -f "TEST_FILE.md" -t "rpg" -o pdf
 ```
 
 For more informations about the available commands : [CLI documentation](documentation/how-to/cli.md)

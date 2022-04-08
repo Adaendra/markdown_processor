@@ -40,17 +40,67 @@ body {
     }
 
     @page:left {
-        @bottom-right {
-            content: counter(page);
-            color: rgba(var(--brown), 0.6);
-            font-family: 'Cinzel', serif;
+        @bottom-center {
+            width: calc(100% - 60px);
+            border-top: solid #DBC49E 4px;
+            border-bottom: solid #DBC49E 1px;
+            border-left: solid #DBC49E 2px;
+            border-radius: 8px 0% 0% 0%;
+            position: absolute;
+            bottom: 40px;
+            right: 0px;
+            content: " s";
+            font-size: 1px;
+            padding: 1px;
+            height: 8px;
+            color: transparent;
         }
-    }
-    @page:right {
+
         @bottom-left {
             content: counter(page);
             color: rgba(var(--brown), 0.6);
             font-family: 'Cinzel', serif;
+            border-bottom: solid #DBC49E 2px;
+            border-right: solid #DBC49E 2px;
+            width: 62px;
+            height: 30px;
+            position: absolute;
+            bottom: 10px;
+            left: 0px;
+            text-align: center;
+            border-radius: 0% 0% 8px 0%;
+        }
+    }
+    @page:right {
+        @bottom-center {
+            width: calc(100% - 60px);
+            border-top: solid #DBC49E 4px;
+            border-bottom: solid #DBC49E 1px;
+            border-right: solid #DBC49E 2px;
+            border-radius: 0% 8px 0% 0%;
+            position: absolute;
+            left: 0px;
+            bottom: 40px;
+            content: " s";
+            font-size: 1px;
+            padding: 1px;
+            height: 8px;
+            color: transparent;
+        }
+
+        @bottom-right {
+            content: counter(page);
+            color: rgba(var(--brown), 0.6);
+            font-family: 'Cinzel', serif;
+            border-bottom: solid #DBC49E 2px;
+            border-left: solid #DBC49E 2px;
+            width: 62px;
+            height: 30px;
+            position: absolute;
+            bottom: 10px;
+            right: 0px;
+            text-align: center;
+            border-radius: 0% 0% 0% 8px;
         }
     }
 
@@ -144,7 +194,7 @@ h2 {
     margin-top: 12px;
     font-family: 'Cinzel', serif;
     color: rgba(var(--brown), 1);
-    column-span: all;
+    /* column-span: all; */
 }
 h3 {
     font-size: 1.6em;
