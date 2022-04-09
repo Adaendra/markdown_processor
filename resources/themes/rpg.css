@@ -147,6 +147,45 @@ body {
 
 }
 
+/* ----- FRONT MATTER ----- */
+.frontMatter {
+    position: relative;
+}
+.frontMatter > h1 {
+    position: absolute;
+    top: 400px;
+    left: 40px;
+    width: calc(100% - 80px);
+    font-size: 80px;
+    text-align: center;
+}
+.frontMatter > h3 {
+    font-size: 16px !important;
+    padding-bottom: 40px;
+    text-decoration: none;
+    border: none;
+    font-style: italic;
+    color: black !important;
+    position: absolute;
+    top: 520px;
+    left: 40px;
+    width: calc(100% - 80px);
+    text-align: center;
+}
+
+.frontMatter > .copyright {
+    position: absolute;
+    top: 1000px;
+    left: 40px;
+    width: calc(100% - 80px);
+    font-size: 12px !important;
+    padding-bottom: 40px;
+    text-decoration: none;
+    border: none;
+    font-style: italic;
+    text-align: center;
+}
+
 /* ----- PARAGRAPH ----- */
 .paragraph {
     width : 100%;
