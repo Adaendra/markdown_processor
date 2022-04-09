@@ -41,6 +41,14 @@ async function process (options) {
                 options.titre = option_file_content.titre
             }
 
+            if (!options.subtitle && option_file_content.subtitle) {
+                options.subtitle = option_file_content.subtitle
+            }
+
+            if (!options.copyrights && option_file_content.copyrights) {
+                options.copyrights = option_file_content.copyrights
+            }
+
             if (option_file_content.theme) {
                 options.theme = option_file_content.theme
             }
@@ -48,7 +56,18 @@ async function process (options) {
             if (!options.customTheme && option_file_content.customTheme) {
                 options.customTheme = option_file_content.customTheme
             }
+
+            if (!options.frontMatter && option_file_content.frontMatter) {
+                options.frontMatter = option_file_content.frontMatter
+            }
         }
+
+        if (options.frontMatter) {
+            options.frontMatter = true
+        } else {
+            options.frontMatter = false
+        }
+
         // If any name is defined, generate on from timestamp
         if (!options.name) {
             options.name = Date.now()

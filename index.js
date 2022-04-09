@@ -26,8 +26,18 @@ program
         'Path to the MarkDown files to process.'
     )
     .option(
-        '-t, --titre <title_in_html_file>',
+        '-t, --title <title_in_html_file>',
         'Title to show in the HTML file',
+        ''
+    )
+    .option(
+        '--subtitle <subtitle_in_html_file>',
+        'Subtitle to show in the HTML file',
+        ''
+    )
+    .option(
+        '--copyrights <copyrights>',
+        'Copyrights',
         ''
     )
     .addOption(new program.Option(
@@ -53,6 +63,10 @@ program
     .option(
         '--table <table of content levels>',
         'To add a table of content. Select which levels of title must be added in. Formats: \'[1-6]\' or \'[1-6]-[1-6]\''
+    )
+    .option(
+        '--front-matter',
+        'To have a front matter in your file'
     )
     .option(
         '--option-file <path to option file>',

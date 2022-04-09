@@ -13,10 +13,10 @@ md-processor process -f "TEST.md"
 md-processor process -f "TEST.md" -f "TEST2.md"
 
 # Use a specific theme
-md-processor process -f "TEST.md" -t "rpg"
+md-processor process -f "TEST.md" --theme "rpg"
 
 # Create a pdf file
-md-processor process -f "TEST_FILE.md" -t "rpg" -o pdf
+md-processor process -f "TEST_FILE.md" --theme "rpg" -o pdf
 ```
 
 For more informations about the available commands : [CLI documentation](documentation/how-to/cli.md)
