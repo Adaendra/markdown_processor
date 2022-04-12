@@ -6,6 +6,6 @@
     "./resources/TEST_FILE_DND.md"
   ],
   "output": "pdf",
-  "titre": "test titre from options",
+  "title": "test title from options",
   "theme": "rpg"
 }

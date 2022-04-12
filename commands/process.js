@@ -37,8 +37,8 @@ async function process (options) {
                 options.output = option_file_content.output
             }
 
-            if (!options.titre && option_file_content.titre) {
-                options.titre = option_file_content.titre
+            if (!options.title && option_file_content.title) {
+                options.title = option_file_content.title
             }
 
             if (!options.subtitle && option_file_content.subtitle) {
@@ -134,7 +134,7 @@ async function process (options) {
         )
         // Generate the html file
         htmlProcessor.generateHtmlFile(
-            options.titre,
+            options.title,
             options.destination + html_name,
             datas,
             options.output == 'pdf',
