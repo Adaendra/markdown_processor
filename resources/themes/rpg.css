@@ -217,8 +217,8 @@ p:first-of-type::first-letter {
 /* ----- TITLES ----- */
 h1 {
     font-size: 2.8em;
-    margin-bottom: 20px;
-    margin-top: 12px;
+    margin-bottom: 8px;
+    margin-top: 20px;
     font-family: "Nodesto Caps Condensed";
     color: rgba(var(--brown), 1);
     text-transform: uppercase;
@@ -229,8 +229,8 @@ h1 {
 h2 {
     font-size: 1.8em;
     font-weight: 800;
-    margin-bottom: 16px;
-    margin-top: 12px;
+    margin-bottom: 8px;
+    margin-top: 8px;
     font-family: 'Cinzel', serif;
     color: rgba(var(--brown), 1);
     /* column-span: all; */
@@ -238,7 +238,7 @@ h2 {
 h3 {
     font-size: 1.6em;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     margin-top: 8px;
     font-family: 'Cinzel', serif;
     color: rgba(var(--brown), 1);
@@ -403,22 +403,22 @@ figure > figcaption {
     width: 30%;
     margin-left: 35%;
     border-top: solid rgba(var(--brown), 0.2) 1px;
-    margin-top: 8px;
-    margin-bottom: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 .medium_horizontal_rule {
     width: 40%;
     margin-left: 30%;
     border-top: solid rgba(var(--brown), 0.3) 1px;
-    margin-top: 16px;
-    margin-bottom: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 .large_horizontal_rule {
     width: 60%;
     margin-left: 20%;
     border-top: solid rgba(var(--brown), 0.4) 1px;
-    margin-top: 32px;
-    margin-bottom: 32px;
+    margin-top: 48px;
+    margin-bottom: 48px;
 }
 
 /* ----- CODE BLOCK ----- */
@@ -431,6 +431,7 @@ pre {
 /* ----- TABLE ----- */
 table {
     width: 100%;
+    font-size: 12px !important;
 }
 th {
     font-weight: 500;
